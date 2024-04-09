@@ -75,7 +75,7 @@
     position: relative;
     background-image: url('./images/Background1.png');
     background-size: cover;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .divSec1 {
@@ -137,7 +137,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: black;
-    height: 100vh;
+    min-height: 100vh;
 }
 
 .ExampleImage {
@@ -245,6 +245,7 @@
     position: relative;
     cursor: pointer;
     transition: ease 0.8s;
+    border-radius: 8px;
 }
 .bladeContainer::after{
     content: "";
@@ -254,10 +255,11 @@
     height: 25px;
     position: absolute;
     left: 100px;
-    top: -70px;
+    top: -90px;
 }
 .bladeContainer:hover{
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    transform: translateY(-10px);
 }
 
 .Bladeimage {
@@ -280,8 +282,86 @@
 /*SECTION4*/
 
 .Section4 {
-    height: 100vh;
-    background-color: black;
+    min-height: 120vh;
+    background: linear-gradient(141deg, rgba(0, 0, 0, 1) 0%, rgb(15, 15, 15) 82%, rgb(14, 14, 14) 100%);
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    padding: 100px 40px;
+}
+
+.HeaderSec4 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    height: 100px;
+    width: 100%;
+}
+
+.TitleSec4 {
+    width: 800px;
+    font-size: 45px;
+    color: white;
+}
+
+.IconSec4 {
+    max-width: 100%;
+    height: 150%;
+    transform: rotate(-10deg);
+}
+
+.carousel {
+    display: flex;
+    gap: 70px;
+    margin-top: 200px;
+    justify-content: center;
+}
+
+.ScissorsContainer {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    align-items: center;
+    gap: 12px;
+    width: 230px;
+    position: relative;
+    cursor: pointer;
+    transition: ease 0.8s;
+    border-radius: 8px;
+}
+.ScissorsContainer::after{
+    content: "";
+    background-color: rgb(255, 255, 255);
+    border-radius: 50px;
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    left: 100px;
+    top: -100px;
+}
+.ScissorsContainer:hover{
+    box-shadow: rgba(65, 65, 65, 0.3) 0px 19px 38px, rgba(145, 145, 145, 0.22) 0px 15px 12px;
+    transform: translateY(-10px);
+}
+
+.Scissorsimage {
+    width: 90%;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.ScissorsName {
+    font-weight: 600;
+    font-size: 20px;
+    color: #e99f00;
+}
+
+.ScissorsDescription {
+    text-align: center;
+    width: 100%;
+    font-family: cursive;
+    color: white;
 }
 
 
