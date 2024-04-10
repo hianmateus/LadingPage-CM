@@ -49,6 +49,7 @@
 
 .Navli:hover {
     opacity: 1;
+    transform: translateY(-5px);
 }
 
 .Navli::after {
@@ -124,10 +125,14 @@
 
 .ButtonW:hover {
     box-shadow: rgba(255, 222, 0, 1) 0px 0px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transform: translateY(-5px);
+
 }
 
 .ButtonM:hover {
     box-shadow: rgba(255, 222, 0, 1) 0px 0px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transform: translateY(-5px);
+
 }
 
 /*SECTION2*/
@@ -206,6 +211,7 @@
     flex-direction: column;
     position: relative;
     padding: 100px 40px;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 8%, rgba(255,255,255,1) 100%);
 }
 
 .HeaderSec3 {
@@ -263,9 +269,13 @@
 }
 
 .Bladeimage {
-    width: 90%;
+    width: 80%;
     border-radius: 100px;
     cursor: pointer;
+    transition: ease 0.4s;
+}
+.Bladeimage:hover{
+    transform: scale(1.1);
 }
 
 .BladeName {
@@ -283,11 +293,11 @@
 
 .Section4 {
     min-height: 120vh;
-    background: linear-gradient(141deg, rgba(0, 0, 0, 1) 0%, rgb(15, 15, 15) 82%, rgb(14, 14, 14) 100%);
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 100px 40px;
+    padding: 120px 40px;
+    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 100%);
 }
 
 .HeaderSec4 {
@@ -346,9 +356,13 @@
 }
 
 .Scissorsimage {
-    width: 90%;
+    width: 80%;
     border-radius: 5px;
     cursor: pointer;
+    transition: ease 0.4s;
+}
+.Scissorsimage:hover{
+    transform: scale(1.1);
 }
 
 .ScissorsName {
@@ -368,9 +382,42 @@
 /*SECTION5*/
 
 .Section5 {
-    height: 100vh;
+    min-height: 100vh;
     background-color: gray;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px 50px;
+    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(126,126,126,1) 16%, rgba(126,126,126,1) 100%);
 }
+
+.CenterSec5{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.h1Sec5{
+    color: white;
+    font-size: 48px;
+}
+
+.TextSec5{
+    color: white;
+    font-size: 25px;
+    width: 820px;
+    text-align: center;
+}
+
+.DivMachines{}
+
+.SecadorContainer{}
+
+.SecadorImage{}
+
+.SecadorTitle{}
+
+.SecadorDescription{}
 
 
 /*SECTION6*/
