@@ -112,6 +112,7 @@
     border-radius: 5px;
     font-weight: 600;
     cursor: pointer;
+    transition: ease 0.5s;
 }
 
 .ButtonM {
@@ -121,6 +122,8 @@
     border-radius: 5px;
     font-weight: 600;
     cursor: pointer;
+    transition: ease 0.5s;
+
 }
 
 .ButtonW:hover {
@@ -142,7 +145,7 @@
     justify-content: space-around;
     align-items: center;
     background-color: black;
-    min-height: 100vh;
+    min-height: 110vh;
 }
 
 .ExampleImage {
@@ -159,7 +162,7 @@
 .h2Sec2 {
     text-align: center;
     color: #ffca00;
-    margin-bottom: 35px;
+    margin-bottom: 65px;
     position: relative;
     font-size: 30px;
     font-weight: 500;
@@ -175,8 +178,13 @@
     bottom: -5px;
 }
 
+b {
+    color: #ffca00;
+    margin-right: 8px;
+}
+
 .TextSec2 {
-    text-align: center;
+    text-align: start;
     color: white;
     position: relative;
     font-family: "Madimi One", sans-serif;
@@ -186,7 +194,19 @@
     position: relative;
 }
 
-.TextSec2::after {
+
+.Text2Sec2 {
+    text-align: start;
+    color: white;
+    position: relative;
+    font-family: "Madimi One", sans-serif;
+    font-size: 22px;
+    width: 530px;
+    padding-bottom: 35px;
+    position: relative;
+}
+
+.Text2Sec2::after {
     content: "";
     position: absolute;
     width: 70%;
@@ -210,8 +230,9 @@
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 100px 40px;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(255,255,255,1) 8%, rgba(255,255,255,1) 100%);
+    padding: 280px 40px 50px 40px;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 8%, rgba(255, 255, 255, 1) 100%);
+    align-items: center;
 }
 
 .HeaderSec3 {
@@ -221,6 +242,25 @@
     position: relative;
     height: 100px;
     width: 100%;
+}
+
+.TextCenterSec3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+
+.pCenterSec3{
+    font-size: 35px;
+    font-weight: 600;
+    width: 950px;
+    border-bottom: solid 3px #000000;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+    margin-top: 70px;
 }
 
 .TitleSec3 {
@@ -241,6 +281,7 @@
     justify-content: center;
 }
 
+
 .bladeContainer {
     display: flex;
     flex-direction: column;
@@ -253,7 +294,8 @@
     transition: ease 0.8s;
     border-radius: 8px;
 }
-.bladeContainer::after{
+
+.bladeContainer::after {
     content: "";
     background-color: black;
     border-radius: 50px;
@@ -263,18 +305,20 @@
     left: 100px;
     top: -90px;
 }
-.bladeContainer:hover{
+
+.bladeContainer:hover {
     box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
     transform: translateY(-10px);
 }
 
 .Bladeimage {
-    width: 80%;
-    border-radius: 100px;
+    width: 50%;
     cursor: pointer;
     transition: ease 0.4s;
+    padding-top: 10px;
 }
-.Bladeimage:hover{
+
+.Bladeimage:hover {
     transform: scale(1.1);
 }
 
@@ -289,6 +333,102 @@
     font-family: cursive;
 }
 
+.TextDownSex3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    margin-top: 120px;
+    border-top: solid 3px black;
+    padding-top: 80px;
+    width: 60%;
+}
+
+.h2DownSec3{
+    font-size: 40px;
+    font-weight: 600;
+    text-align: center;
+    width: 590px;
+    color: #ffdb00;
+}
+
+.pDownSec3{
+    font-size: 30px;
+    text-align: center;
+    width: 800px;
+    font-weight: 600;
+}
+
+.SpanCompareSec3{
+    display: flex;
+    margin-top: 130px;
+    justify-content: space-around;
+    gap: 150px;
+}
+
+.MaterialSec3{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.TitleMaterial1{
+    color: #ffdb00;
+    font-size: 40px;
+    margin-bottom: 20px;
+    font-family: 'Madimi One';
+    margin-left: 35px;
+}
+
+.TextsList1{
+    border-left: solid 4px #ffdb00;
+    padding-left: 12px;
+    padding: 4px 12px;
+}
+
+.liLM{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    width: 540px;
+}
+
+.MaterialSec3{
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.TitleMaterial2{
+    color: #ffdb00;
+    font-size: 40px;
+    margin-bottom: 20px;
+    /* font-family: 'Madimi One'; */
+    font-family: 'Madimi One';
+    margin-left: 35px;
+}
+
+.TextsList2{
+    border-left: solid 4px #ffdb00;
+    padding-left: 12px;
+    padding: 4px 12px;
+}
+
+.liLC{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    width: 540px;
+}
+
+.GoldIconSec3{
+    max-width: 8%;
+    height: auto;
+    position: relative;
+    margin-top: 85px;
+}
+
+
 /*SECTION4*/
 
 .Section4 {
@@ -297,7 +437,7 @@
     flex-direction: column;
     position: relative;
     padding: 120px 40px;
-    background: linear-gradient(180deg, rgba(255,255,255,1) 0%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 8%, rgba(0,0,0,1) 100%);
+    background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 1) 100%);
 }
 
 .HeaderSec4 {
@@ -307,6 +447,7 @@
     position: relative;
     height: 100px;
     width: 100%;
+    margin-top: 120px;
 }
 
 .TitleSec4 {
@@ -340,7 +481,8 @@
     transition: ease 0.8s;
     border-radius: 8px;
 }
-.ScissorsContainer::after{
+
+.ScissorsContainer::after {
     content: "";
     background-color: rgb(255, 255, 255);
     border-radius: 50px;
@@ -350,8 +492,9 @@
     left: 100px;
     top: -100px;
 }
-.ScissorsContainer:hover{
-    box-shadow: rgba(65, 65, 65, 0.3) 0px 19px 38px, rgba(145, 145, 145, 0.22) 0px 15px 12px;
+
+.ScissorsContainer:hover {
+    box-shadow: rgba(132, 110, 0, 0.3) 0px 19px 38px, rgba(152, 142, 0, 0.22) 0px 15px 12px;
     transform: translateY(-10px);
 }
 
@@ -360,8 +503,11 @@
     border-radius: 5px;
     cursor: pointer;
     transition: ease 0.4s;
+    border: solid 2px #ffcc00;
+    padding: 8px;
 }
-.Scissorsimage:hover{
+
+.Scissorsimage:hover {
     transform: scale(1.1);
 }
 
@@ -378,6 +524,79 @@
     color: white;
 }
 
+.SpanSec4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top: solid 2px #ffca00;
+    border-bottom: solid 2px #ffca00;
+    margin-top: 90px;
+}
+
+
+.textdivHSec4 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.TextsinDiv {
+    display: flex;
+    flex-direction: column;
+}
+
+.TextTitle {
+    color: #ffca00;
+    text-align: center;
+    font-size: 35px;
+    margin-top: 100px;
+    margin-bottom: 20px;
+}
+
+.Textlorem{
+    color: white;
+    text-align: center;
+    width: 800px;
+    font-size: 25px;
+    font-weight: 800;
+    border-bottom: solid 2px #ffe400;
+    padding-bottom: 60px;
+}
+
+
+.divTextsSec4 {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+
+.texth2 {
+    color: #ffca00;
+    font-size: 30px;
+    margin-bottom: 10px;
+    margin-top: 50px;
+}
+
+.textp {
+    color: white;
+    width: 640px;
+    font-size: 23px;
+    margin-bottom: 60px;
+    font-weight: 600;
+}
+
+.DivTextSec4{
+    cursor: pointer;
+}
+.DivTextSec4:hover{
+    transform: translateY(-10px);
+    box-shadow: rgba(132, 110, 0, 0.3) 0px 19px 38px, rgba(152, 142, 0, 0.22) 0px 15px 12px;
+
+
+}
+
 
 /*SECTION5*/
 
@@ -388,36 +607,36 @@
     align-items: center;
     justify-content: center;
     padding: 30px 50px;
-    background: linear-gradient(180deg, rgba(0,0,0,1) 0%, rgba(126,126,126,1) 16%, rgba(126,126,126,1) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(126, 126, 126, 1) 16%, rgba(126, 126, 126, 1) 100%);
 }
 
-.CenterSec5{
+.CenterSec5 {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.h1Sec5{
+.h1Sec5 {
     color: white;
     font-size: 48px;
 }
 
-.TextSec5{
+.TextSec5 {
     color: white;
     font-size: 25px;
     width: 820px;
     text-align: center;
 }
 
-.DivMachines{}
+.DivMachines {}
 
-.SecadorContainer{}
+.SecadorContainer {}
 
-.SecadorImage{}
+.SecadorImage {}
 
-.SecadorTitle{}
+.SecadorTitle {}
 
-.SecadorDescription{}
+.SecadorDescription {}
 
 
 /*SECTION6*/
