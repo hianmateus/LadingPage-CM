@@ -179,7 +179,7 @@
 }
 
 b {
-    color: #ffca00;
+    color: #eabb00;
     margin-right: 8px;
 }
 
@@ -211,7 +211,7 @@ b {
     position: absolute;
     width: 70%;
     height: 2px;
-    background-color: #d99400;
+    background-color: #f1b500;
     left: 80px;
     bottom: -5px;
 }
@@ -244,7 +244,7 @@ b {
     width: 100%;
 }
 
-.TextCenterSec3{
+.TextCenterSec3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -252,7 +252,7 @@ b {
 }
 
 
-.pCenterSec3{
+.pCenterSec3 {
     font-size: 35px;
     font-weight: 600;
     width: 950px;
@@ -333,7 +333,7 @@ b {
     font-family: cursive;
 }
 
-.TextDownSex3{
+.TextDownSex3 {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -344,63 +344,63 @@ b {
     width: 60%;
 }
 
-.h2DownSec3{
+.h2DownSec3 {
     font-size: 40px;
     font-weight: 600;
     text-align: center;
     width: 590px;
-    color: #ffdb00;
+    color: #e9ba00;
 }
 
-.pDownSec3{
+.pDownSec3 {
     font-size: 30px;
     text-align: center;
     width: 800px;
     font-weight: 600;
 }
 
-.SpanCompareSec3{
+.SpanCompareSec3 {
     display: flex;
     margin-top: 130px;
     justify-content: space-around;
     gap: 150px;
 }
 
-.MaterialSec3{
+.MaterialSec3 {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.TitleMaterial1{
-    color: #ffdb00;
+.TitleMaterial1 {
+    color: #e3b600;
     font-size: 40px;
     margin-bottom: 20px;
     font-family: 'Madimi One';
     margin-left: 35px;
 }
 
-.TextsList1{
-    border-left: solid 4px #ffdb00;
+.TextsList1 {
+    border-left: solid 4px #cda400;
     padding-left: 12px;
     padding: 4px 12px;
 }
 
-.liLM{
+.liLM {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 15px;
     width: 540px;
 }
 
-.MaterialSec3{
+.MaterialSec3 {
     display: flex;
     flex-direction: column;
     align-items: start;
 }
 
-.TitleMaterial2{
-    color: #ffdb00;
+.TitleMaterial2 {
+    color: #eabb00;
     font-size: 40px;
     margin-bottom: 20px;
     /* font-family: 'Madimi One'; */
@@ -408,20 +408,20 @@ b {
     margin-left: 35px;
 }
 
-.TextsList2{
-    border-left: solid 4px #ffdb00;
+.TextsList2 {
+    border-left: solid 4px #e7b900;
     padding-left: 12px;
     padding: 4px 12px;
 }
 
-.liLC{
+.liLC {
     font-size: 25px;
     font-weight: 600;
     margin-bottom: 15px;
     width: 540px;
 }
 
-.GoldIconSec3{
+.GoldIconSec3 {
     max-width: 8%;
     height: auto;
     position: relative;
@@ -555,7 +555,7 @@ b {
     margin-bottom: 20px;
 }
 
-.Textlorem{
+.Textlorem {
     color: white;
     text-align: center;
     width: 800px;
@@ -587,14 +587,16 @@ b {
     font-weight: 600;
 }
 
-.DivTextSec4{
+.DivTextSec4 {
     cursor: pointer;
+    border-radius: 8px;
+    padding: 0 18px;
 }
-.DivTextSec4:hover{
+
+.DivTextSec4:hover {
     transform: translateY(-10px);
     box-shadow: rgba(132, 110, 0, 0.3) 0px 19px 38px, rgba(152, 142, 0, 0.22) 0px 15px 12px;
-
-
+    background-color: #111111;
 }
 
 
