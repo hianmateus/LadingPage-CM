@@ -142,10 +142,17 @@
 
 .Section2 {
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
     align-items: center;
     background-color: black;
     min-height: 110vh;
+}
+
+.Main1Sec2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    width: 100%;
 }
 
 .ExampleImage {
@@ -220,6 +227,68 @@ b {
     max-width: 16%;
     height: auto;
     margin-top: 20px;
+}
+
+.Main2Sec2 {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    margin-top: 120px;
+    min-height: 120vh;
+}
+
+.TitleSec2 {
+    color: rgb(227, 182, 0);
+    position: relative;
+    font-size: 50px;
+    margin-left: 120px;
+    border-bottom: solid;
+    width: 460px;
+    padding-bottom: 5px;
+    margin-bottom: 20px;
+}
+
+.ContainerLiSec2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    margin-top: 50px;
+}
+
+.ListSec2 {
+    display: flex;
+    flex-direction: column;
+    border-left: solid 5px #ffc800;
+    margin-top: 20px;
+}
+
+.TitleList2 {
+    color: #e3b600;
+    margin-bottom: 10px;
+    width: 800px;
+    font-size: 35px;
+    padding-left: 30px;
+}
+
+.LiSec2 {
+    color: white;
+    font-size: 25px;
+    margin-left: 70px;
+    list-style: disc;
+    margin-bottom: 25px;
+    margin-top: 30px;
+}
+
+.ExampleSec2 {
+    max-width: 30%;
+    height: 100%;
+    margin-top: 50px;
+}
+
+.GoldIcon2Sec2 {
+    max-width: 8%;
+    height: auto;
+    margin: 80px 0;
 }
 
 /*SECTION3*/
@@ -426,6 +495,7 @@ b {
     height: auto;
     position: relative;
     margin-top: 85px;
+    filter: sepia(100%) brightness(0%);
 }
 
 
