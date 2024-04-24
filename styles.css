@@ -38,8 +38,8 @@
     transition: ease 1s;
 }
 .header2{
-    background: gray;
-    box-shadow: rgb(0 0 0) -5px 0px 40px 20px;
+    background: rgb(239, 195, 0);
+    box-shadow: rgb(194, 139, 0) -5px 0px 40px 20px;
     transition: ease 1s;
 }
 .header3{
