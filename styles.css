@@ -15,37 +15,199 @@
 
 /* Blur */
 
-.Blur{
+.Blur {
     height: 100%;
     width: 100%;
-    background-color: rgba(255, 255, 255, 0.099);
+    background-color: rgba(0, 0, 0, 0.225);
     backdrop-filter: blur(7px);
     position: fixed;
     z-index: 3;
-    display: flex;
+    display: none;
     align-items: center;
     justify-content: center;
 }
 
-.Menu1{
-    border: solid 1px black;
+.bBlack {
+    color: black;
 }
 
-.M1divselect{}
+.Menu1 {
+    background-color: rgba(255, 255, 255, 0.307);
+    backdrop-filter: blur(7px);
+    border-radius: 12px;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    padding: 25px 0;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+}
 
-.DivimageSelected{}
+.M1divselect {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
 
-.ImageSelected{}
+.CloseButton {
+    position: absolute;
+    color: white;
+    opacity: 0.7;
+    font-size: 30px;
+    right: 25px;
+    cursor: pointer;
+    background-color: rgb(255 255 255 / 20%);
+    border-radius: 50px;
+    width: 35px;
+    text-align: center;
+}
+.CloseButton:hover{
+    opacity: 1;
+}
 
-.M1divtexts{}
+.DivimageSelected {
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    border: solid 4px #ffca00;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+}
 
-.Description{}
+.IconCp {
+    max-width: 70%;
+}
 
-.BladesSelections{}
+.IconMc {
+    max-width: 80%;
+}
 
-.DivimageSelection{}
+.IconWa {
+    max-width: 60%;
+}
 
-.ImageSelection{}
+.ButtonCompare{
+    border-radius: 50px;
+    background-color: #ffca00;
+    font-size: 30px;
+    position: absolute;
+    top: 0;
+    left: -39px;
+    width: 36px;
+    cursor: pointer;
+}
+.ButtonCompare:hover{
+    background-color: #ffdb4a;
+}
+
+.ButtonMc{
+    border-radius: 50px;
+    background-color: #ffca00;
+    font-size: 30px;
+    position: absolute;
+    bottom: 45px;
+    right: -38px;
+    width: 36px;
+    cursor: pointer;
+}
+.ButtonMc:hover{
+    background-color: #ffdb4a;
+}
+
+.ButtonWa{
+    border-radius: 50px;
+    background-color: #ffca00;
+    font-size: 30px;
+    position: absolute;
+    bottom: 0;
+    right: -38px;
+    width: 36px;
+    cursor: pointer;
+}
+.ButtonWa:hover{
+    background-color: #ffdb4a;
+}
+
+.ImageSelected {
+    max-width: 100%;
+    height: auto;
+}
+
+.M1divtexts {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 50%;
+}
+
+.Description {
+    color: white;
+    margin-top: 8px;
+}
+
+.BladesSelections {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 10px;
+    overflow-y: scroll;
+    height: 150px;
+    width: 90%;
+    margin-top: 25px;
+}
+
+.DivimageSelection {
+    background-color: black;
+    height: 120px;
+    width: 120px;
+    border: solid 4px yellow;
+    border-radius: 5px;
+    cursor: pointer;
+    display: flex;
+}
+
+.ImageSelection {
+    max-width: 100%;
+    height: auto;
+}
+
+/* Blur2 */
+
+.Blur2{
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.225);
+    backdrop-filter: blur(7px);
+    position: fixed;
+    z-index: 3;
+    display: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.CompareImages {
+    display: flex;
+    flex-direction: column;
+}
+
+.CompareBlades {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+}
+
+.CompareImage {
+    width: 15%;
+}
+
+
+.OtherBlades {
+    display: flex;
+    gap: 20px;
+}
 
 /* HEADER */
 
@@ -780,6 +942,21 @@ b {
 @media screen and (max-width: 1180px) {
     .General {
         min-width: 390px;
+    }
+
+    /* BLUR */
+    .Menu1 {
+        width: 90%;
+    }
+
+    .Description {
+        width: 180%;
+    }
+
+    .BladesSelections {
+        grid-template-columns: repeat(8, 1fr);
+        overflow-x: scroll;
+        width: 80%;
     }
 
     /*HEADER elements*/
