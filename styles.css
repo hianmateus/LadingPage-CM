@@ -188,7 +188,7 @@
 }
 
 .Menu2 {
-    background-color: rgba(255, 255, 255, 0.307);
+    background-color: rgba(255, 255, 255, 0.504);
     backdrop-filter: blur(7px);
     border-radius: 12px;
     width: 50%;
@@ -249,6 +249,16 @@
     align-items: center;
 }
 
+.DivimageSelected2 {
+    background-color: black;
+    height: 150px;
+    width: 150px;
+    border: solid 4px #ffca00;
+    border-radius: 5px;
+    position: relative;
+    display: flex;
+}
+
 .CompareBlades {
     display: flex;
     align-items: center;
@@ -269,7 +279,6 @@
     gap: 25px;
     align-items: center;
     justify-content: center;
-    overflow-x: scroll;
 }
 
 
@@ -1008,7 +1017,12 @@ b {
         min-width: 390px;
     }
 
-    /* BLUR */
+    /*HEADER*/
+    .Header {
+        position: fixed;
+    }
+
+    /* BLUR & BLUR2*/
     .Menu1 {
         width: 90%;
     }
@@ -1021,6 +1035,55 @@ b {
         grid-template-columns: repeat(8, 1fr);
         overflow-x: scroll;
         width: 80%;
+    }
+
+    .Menu2 {
+        width: 95%;
+        padding: 15px;
+        height: 65%;
+    }
+
+    .CompButtons {
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+
+    .DivimageSelected {
+        height: 120px;
+        width: 120px;
+    }
+
+    .CompareBlades {
+        gap: 10;
+    }
+
+    .CompareImage {
+        width: 25%;
+    }
+
+    .DivimageSelected2 {
+        height: 120px;
+        width: 120px;
+    }
+
+    .CompDescription {
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .OtherBlades {
+        width: 100%;
+        overflow-x: scroll;
+        justify-content: start;
+    }
+
+    .DivimageSelection {
+        height: 100px;
+        width: 100px;
     }
 
     /*HEADER elements*/
