@@ -63,15 +63,16 @@
     width: 35px;
     text-align: center;
 }
-.CloseButton:hover{
+
+.CloseButton:hover {
     opacity: 1;
+    transform: scale(1.1);
 }
 
 .DivimageSelected {
-    background-color: black;
     height: 150px;
     width: 150px;
-    border: solid 4px #ffca00;
+    border: 4px solid rgb(255, 202, 0);
     border-radius: 5px;
     position: relative;
     display: flex;
@@ -89,7 +90,7 @@
     max-width: 60%;
 }
 
-.ButtonCompare{
+.ButtonCompare {
     border-radius: 50px;
     background-color: #ffca00;
     font-size: 30px;
@@ -98,12 +99,15 @@
     left: -39px;
     width: 36px;
     cursor: pointer;
-}
-.ButtonCompare:hover{
-    background-color: #ffdb4a;
+    transition: ease 0.5s;
 }
 
-.ButtonMc{
+.ButtonCompare:hover {
+    background-color: #ffdb4a;
+    transform: scale(1.1);
+}
+
+.ButtonMc {
     border-radius: 50px;
     background-color: #ffca00;
     font-size: 30px;
@@ -112,12 +116,15 @@
     right: -38px;
     width: 36px;
     cursor: pointer;
-}
-.ButtonMc:hover{
-    background-color: #ffdb4a;
+    transition: ease 0.5s;
 }
 
-.ButtonWa{
+.ButtonMc:hover {
+    background-color: #ffdb4a;
+    transform: scale(1.1);
+}
+
+.ButtonWa {
     border-radius: 50px;
     background-color: #ffca00;
     font-size: 30px;
@@ -126,14 +133,18 @@
     right: -38px;
     width: 36px;
     cursor: pointer;
+    transition: ease 0.5s;
 }
-.ButtonWa:hover{
+
+.ButtonWa:hover {
     background-color: #ffdb4a;
+    transform: scale(1.1);
 }
 
 .ImageSelected {
     max-width: 100%;
     height: auto;
+    border-radius: 5px;
 }
 
 .M1divtexts {
@@ -146,6 +157,10 @@
 .Description {
     color: white;
     margin-top: 8px;
+    text-shadow: black 1px 1px 2px;
+    border-bottom: solid 1px #717171;
+    padding-bottom: 5px;
+    width: 90%;
 }
 
 .BladesSelections {
@@ -159,23 +174,29 @@
 }
 
 .DivimageSelection {
-    background-color: black;
     height: 120px;
     width: 120px;
-    border: solid 4px yellow;
+    border: solid 3px #ffffff87;
     border-radius: 5px;
     cursor: pointer;
     display: flex;
+    overflow: hidden;
 }
 
 .ImageSelection {
     max-width: 100%;
+    border-radius: 5px;
     height: auto;
+    transition: ease 0.5s;
+}
+
+.ImageSelection:hover {
+    transform: scale(1.1);
 }
 
 /* Blur2 */
 
-.Blur2{
+.Blur2 {
     height: 100%;
     width: 100%;
     background-color: rgba(0, 0, 0, 0.225);
@@ -200,7 +221,7 @@
     gap: 25px;
 }
 
-.CompButtons{
+.CompButtons {
     display: flex;
     width: 100%;
     justify-content: space-between;
@@ -209,7 +230,7 @@
     margin-bottom: 10px;
 }
 
-.ButtonAbout{
+.ButtonAbout {
     background-color: yellow;
     border-radius: 50px;
     padding: 5px;
@@ -220,11 +241,11 @@
     cursor: pointer;
 }
 
-.AboutIcon{
+.AboutIcon {
     width: 100%;
 }
 
-.CloseButton2{
+.CloseButton2 {
     color: white;
     opacity: 0.7;
     font-size: 30px;
@@ -235,7 +256,7 @@
     text-align: center;
 }
 
-.CompDescription{
+.CompDescription {
     text-align: center;
     width: 80%;
     margin-top: 25px;
@@ -340,6 +361,7 @@
 .Navli:hover {
     opacity: 1;
     transform: translateY(-5px);
+    text-shadow: #ffffff 1px 1px 8px;
 }
 
 .Navli::after {
@@ -385,9 +407,9 @@
 
 .h3Sec1 {
     text-align: center;
-    width: 460px;
+    font-size: 28px;
+    width: 500px;
     color: white;
-    font-size: 23px;
 }
 
 .divButtonSec1 {
@@ -480,6 +502,7 @@
 b {
     color: #eabb00;
     margin-right: 8px;
+    text-shadow: 0 0 BLACK;
 }
 
 .TextSec2 {
@@ -540,6 +563,13 @@ b {
     margin-bottom: 20px;
 }
 
+.boxListSec2 {
+    border-radius: 25px;
+    padding: 25px;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(138deg, rgb(17, 17, 17) 0%, rgb(29, 29, 29) 61%, rgb(38, 38, 38) 94%);
+}
+
 .ContainerLiSec2 {
     display: flex;
     justify-content: space-around;
@@ -560,6 +590,7 @@ b {
     width: 800px;
     font-size: 35px;
     padding-left: 30px;
+    text-shadow: rgba(255, 225, 0, 0.74) 1px 1px 12px;
 }
 
 .LiSec2 {
@@ -569,6 +600,7 @@ b {
     list-style: disc;
     margin-bottom: 25px;
     margin-top: 30px;
+    text-shadow: white 1px 1px 12px;
 }
 
 
@@ -593,17 +625,18 @@ b {
     flex-direction: column;
     position: relative;
     padding: 280px 40px 50px 40px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 8%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 1) 100%);
     align-items: center;
 }
 
 .HeaderSec3 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     height: 100px;
     width: 100%;
+    margin-top: 10px;
 }
 
 .TextCenterSec3 {
@@ -628,11 +661,13 @@ b {
 .TitleSec3 {
     width: 800px;
     font-size: 45px;
+    text-align: center;
+    text-shadow: #6b6b6b 1px 1px 12px;
 }
 
 .IconSec3 {
     max-width: 100%;
-    height: 100%;
+    height: 170%;
     transform: rotate(-10deg);
 }
 
@@ -712,6 +747,7 @@ b {
     text-align: center;
     width: 590px;
     color: #e9ba00;
+    font-size: 45px;
 }
 
 .pDownSec3 {
@@ -732,6 +768,9 @@ b {
     display: flex;
     flex-direction: column;
     align-items: start;
+    box-shadow: rgb(0 0 0 / 30%) 0px 19px 38px, rgb(0 0 0 / 22%) 0px 15px 12px;
+    border-radius: 25px;
+    padding: 25px;
 }
 
 .TitleMaterial1 {
@@ -801,28 +840,52 @@ b {
     position: relative;
     padding: 120px 40px;
     background: linear-gradient(180deg, rgba(255, 255, 255, 1) 0%, rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 1) 100%);
+    align-items: center;
 }
 
 .HeaderSec4 {
     display: flex;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: relative;
     height: 100px;
     width: 100%;
-    margin-top: 120px;
+    margin-top: 200px;
 }
 
 .TitleSec4 {
     width: 800px;
     font-size: 45px;
     color: white;
+    text-align: center;
+    text-shadow: white 1px 1px 12px;
 }
 
 .IconSec4 {
     max-width: 100%;
-    height: 150%;
+    height: 170%;
     transform: rotate(-10deg);
+}
+
+.TextCenterSec4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 120px;
+}
+
+
+.pCenterSec4 {
+    font-size: 35px;
+    font-weight: 600;
+    width: 950px;
+    border-bottom: solid 3px #000000;
+    padding-bottom: 50px;
+    margin-bottom: 60px;
+    text-align: center;
+    margin-top: 70px;
+    color: white;
+    border-bottom: solid 2px #ffe400;
 }
 
 .carousel {
@@ -898,23 +961,27 @@ b {
 }
 
 
+.TextsinDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
 .textdivHSec4 {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-}
-
-.TextsinDiv {
-    display: flex;
-    flex-direction: column;
+    border-top: solid 2px #ffe400;
+    margin-top: 180px;
+    width: 70%;
 }
 
 .TextTitle {
     color: #ffca00;
     text-align: center;
-    font-size: 35px;
-    margin-top: 100px;
+    font-size: 45px;
+    margin-top: 50px;
     margin-bottom: 20px;
 }
 
@@ -922,10 +989,8 @@ b {
     color: white;
     text-align: center;
     width: 800px;
-    font-size: 25px;
+    font-size: 28px;
     font-weight: 800;
-    border-bottom: solid 2px #ffe400;
-    padding-bottom: 60px;
 }
 
 
@@ -933,27 +998,30 @@ b {
     display: flex;
     justify-content: space-around;
     width: 100%;
+    padding: 35px;
+    gap: 35px;
 }
 
 .texth2 {
     color: #ffca00;
     font-size: 30px;
     margin-bottom: 10px;
-    margin-top: 50px;
+    text-shadow: #ffc500bf 1px 1px 12px;
 }
 
 .textp {
     color: white;
     width: 640px;
     font-size: 23px;
-    margin-bottom: 60px;
     font-weight: 600;
+    text-shadow: white 1px 1px 8px;
 }
 
 .DivTextSec4 {
     cursor: pointer;
     border-radius: 8px;
-    padding: 0 18px;
+    padding: 18px;
+    background: linear-gradient(138deg, rgb(17, 17, 17) 0%, rgb(34 28 6) 61%, rgb(17, 17, 17) 94%);
 }
 
 .DivTextSec4:hover {
@@ -1032,7 +1100,7 @@ b {
     }
 
     .BladesSelections {
-        grid-template-columns: repeat(8, 1fr);
+        grid-template-columns: repeat(13, 1fr);
         overflow-x: scroll;
         width: 80%;
     }
@@ -1221,8 +1289,9 @@ b {
     .carousel {
         width: 100%;
         margin-top: 50px;
-        flex-direction: column;
         align-items: center;
+        overflow-x: scroll;
+        justify-content: start;
     }
 
     .bladeContainer::after {
@@ -1278,6 +1347,10 @@ b {
         padding: 100px 10px;
     }
 
+    .HeaderSec4{
+        margin-top: 300px;
+    }
+
     .ScissorsContainer::after {
         width: 15px;
         height: 15px;
@@ -1295,6 +1368,11 @@ b {
 
     .TextTitle {
         font-size: 35px;
+    }
+
+    .pCenterSec4 {
+        width: 100%;
+        font-size: 20px;
     }
 
     .Textlorem {
