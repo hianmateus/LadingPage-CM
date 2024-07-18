@@ -14,298 +14,8 @@
 }
 
 b {
-    color: #e6c544;
+    color: #ffcc00;
 }
-
-/* Blur */
-
-.Blur {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.225);
-    backdrop-filter: blur(7px);
-    position: fixed;
-    z-index: 3;
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.bBlack {
-    color: black;
-}
-
-.Menu1 {
-    background-color: rgba(255, 255, 255, 0.307);
-    backdrop-filter: blur(7px);
-    border-radius: 12px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    padding: 25px 0;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-}
-
-.M1divselect {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-}
-
-.CloseButton {
-    position: absolute;
-    color: white;
-    opacity: 0.7;
-    font-size: 30px;
-    right: 25px;
-    cursor: pointer;
-    background-color: rgb(255 255 255 / 20%);
-    border-radius: 50px;
-    width: 35px;
-    text-align: center;
-}
-
-.CloseButton:hover {
-    opacity: 1;
-    transform: scale(1.1);
-}
-
-.DivimageSelected {
-    height: 150px;
-    width: 150px;
-    border: 4px solid rgb(255, 202, 0);
-    border-radius: 5px;
-    position: relative;
-    display: flex;
-}
-
-.IconCp {
-    max-width: 70%;
-}
-
-.IconMc {
-    max-width: 80%;
-}
-
-.IconWa {
-    max-width: 60%;
-}
-
-.ButtonCompare {
-    border-radius: 50px;
-    background-color: #ffca00;
-    font-size: 30px;
-    position: absolute;
-    top: 0;
-    left: -39px;
-    width: 36px;
-    cursor: pointer;
-    transition: ease 0.5s;
-}
-
-.ButtonCompare:hover {
-    background-color: #ffdb4a;
-    transform: scale(1.1);
-}
-
-.ButtonMc {
-    border-radius: 50px;
-    background-color: #ffca00;
-    font-size: 30px;
-    position: absolute;
-    bottom: 45px;
-    right: -38px;
-    width: 36px;
-    cursor: pointer;
-    transition: ease 0.5s;
-}
-
-.ButtonMc:hover {
-    background-color: #ffdb4a;
-    transform: scale(1.1);
-}
-
-.ButtonWa {
-    border-radius: 50px;
-    background-color: #ffca00;
-    font-size: 30px;
-    position: absolute;
-    bottom: 0;
-    right: -38px;
-    width: 36px;
-    cursor: pointer;
-    transition: ease 0.5s;
-}
-
-.ButtonWa:hover {
-    background-color: #ffdb4a;
-    transform: scale(1.1);
-}
-
-.ImageSelected {
-    max-width: 100%;
-    height: auto;
-    border-radius: 5px;
-}
-
-.M1divtexts {
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 50%;
-}
-
-.Description {
-    color: white;
-    margin-top: 8px;
-    text-shadow: black 1px 1px 2px;
-    border-bottom: solid 1px #717171;
-    padding-bottom: 5px;
-    width: 90%;
-}
-
-.BladesSelections {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    grid-gap: 10px;
-    overflow-y: scroll;
-    height: 150px;
-    width: 90%;
-    margin-top: 25px;
-}
-
-.DivimageSelection {
-    height: 120px;
-    width: 120px;
-    border: solid 3px #ffffff87;
-    border-radius: 5px;
-    cursor: pointer;
-    display: flex;
-    overflow: hidden;
-}
-
-.ImageSelection {
-    max-width: 100%;
-    border-radius: 5px;
-    height: auto;
-    transition: ease 0.5s;
-}
-
-.ImageSelection:hover {
-    transform: scale(1.1);
-}
-
-/* Blur2 */
-
-.Blur2 {
-    height: 100%;
-    width: 100%;
-    background-color: rgba(0, 0, 0, 0.225);
-    backdrop-filter: blur(7px);
-    position: fixed;
-    z-index: 3;
-    display: none;
-    align-items: center;
-    justify-content: center;
-}
-
-.Menu2 {
-    background-color: rgba(255, 255, 255, 0.504);
-    backdrop-filter: blur(7px);
-    border-radius: 12px;
-    width: 50%;
-    display: flex;
-    justify-content: center;
-    padding: 15px;
-    flex-direction: column;
-    align-items: center;
-    gap: 25px;
-}
-
-.CompButtons {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    align-items: center;
-    padding: 0 20px;
-    margin-bottom: 10px;
-}
-
-.ButtonAbout {
-    background-color: yellow;
-    border-radius: 50px;
-    padding: 5px;
-    display: flex;
-    align-items: center;
-    height: 30px;
-    width: 30px;
-    cursor: pointer;
-}
-
-.AboutIcon {
-    width: 100%;
-}
-
-.CloseButton2 {
-    color: white;
-    opacity: 0.7;
-    font-size: 30px;
-    cursor: pointer;
-    background-color: rgb(255 255 255 / 20%);
-    border-radius: 50px;
-    width: 35px;
-    text-align: center;
-}
-
-.CompDescription {
-    text-align: center;
-    width: 80%;
-    margin-top: 25px;
-    font-weight: 500;
-    color: white;
-}
-
-.CompareImages {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.DivimageSelected2 {
-    background-color: black;
-    height: 150px;
-    width: 150px;
-    border: solid 4px #ffca00;
-    border-radius: 5px;
-    position: relative;
-    display: flex;
-}
-
-.CompareBlades {
-    display: flex;
-    align-items: center;
-    gap: 10px;
-    justify-content: center;
-    position: relative;
-}
-
-.CompareImage {
-    width: 15%;
-}
-
-
-.OtherBlades {
-    grid-template-columns: repeat(5, 1fr);
-    width: 70%;
-    display: grid;
-    gap: 25px;
-    align-items: center;
-    justify-content: center;
-}
-
 
 /* HEADER */
 
@@ -319,27 +29,14 @@ b {
     background: linear-gradient(141deg, rgba(0, 0, 0, 1) 0%, rgba(24, 24, 24, 1) 82%, rgba(29, 29, 29, 1) 100%);
     padding: 0 90px 0 70px;
     position: fixed;
-    z-index: 2;
-    box-shadow: rgb(0 0 0) -5px 0px 40px 20px;
+    z-index: 99;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     transition: ease 1s;
 }
 
-/*Header colors*/
 
 .header1 {
     background: linear-gradient(141deg, rgba(0, 0, 0, 1) 0%, rgba(24, 24, 24, 1) 82%, rgba(29, 29, 29, 1) 100%);
-    box-shadow: rgb(34, 30, 0) -5px 0px 40px 20px;
-    transition: ease 1s;
-}
-
-.header2 {
-    background: rgb(239, 195, 0);
-    box-shadow: rgb(216 179 84) -5px 0px 40px 20px;
-    transition: ease 1s;
-}
-
-.header3 {
-    background: black;
     box-shadow: rgb(34, 30, 0) -5px 0px 40px 20px;
     transition: ease 1s;
 }
@@ -355,8 +52,8 @@ b {
 }
 
 .Navli {
-    color: white;
-    font-weight: 900;
+    color: rgb(255, 213, 0);
+    font-weight: 500;
     cursor: pointer;
     position: relative;
     opacity: 0.8;
@@ -365,22 +62,32 @@ b {
 .Navli:hover {
     opacity: 1;
     transform: translateY(-5px);
-    text-shadow: #ffffff 1px 1px 8px;
+    text-shadow: rgb(255, 213, 0) 1px 1px 8px;
 }
 
 .Navli::after {
     content: "";
     position: absolute;
     width: 0;
-    height: 2px;
-    background-color: white;
+    height: 3px;
+    background-color: rgb(255, 213, 0);
     left: 0;
-    bottom: -5px;
+    bottom: -38px;
     transition: ease 0.5s;
 }
 
 .Navli:hover::after {
     width: 100%;
+}
+
+.MenuHeader {
+    display: none;
+}
+
+.MenuIcon {
+    display: flex;
+    font-size: 45px;
+    color: rgb(243 206 0);
 }
 
 
@@ -485,11 +192,12 @@ b {
 
 .TitleSec2 {
     color: white;
-    font-size: 35px;
+    font-size: 45px;
 }
 
 .TextSex2 {
     color: #717171;
+    font-size: 20px;
 }
 
 .ButtonSec2 {
@@ -506,14 +214,14 @@ b {
 .Span2Sec2 {
     display: flex;
     flex-direction: column;
-    gap: 40px;
+    gap: 50px;
 }
 
 .TitleHorario {
     color: white;
     font-weight: 900;
-    font-size: 25px;
-    width: 135px;
+    font-size: 30px;
+    width: 150px;
 }
 
 .DivHorario {}
@@ -521,7 +229,8 @@ b {
 .DaySec2 {
     color: white;
     font-weight: 200;
-    margin-bottom: 17px;
+    margin-bottom: 25px;
+    font-size: 20px;
 }
 
 .GoldIcon2Sec2 {
@@ -628,9 +337,9 @@ b {
     display: flex;
     flex-direction: column;
     position: relative;
-    background: linear-gradient(180deg, rgb(34 34 34) 0%, rgba(255, 255, 255, 1) 5%, rgba(255, 255, 255, 1) 100%);
+    background: linear-gradient(180deg, rgb(34 34 34) 0%, rgba(255, 255, 255, 1) 2%, rgba(255, 255, 255, 1) 100%);
     align-items: center;
-    padding-top: 280px;
+    padding-top: 170px;
 }
 
 .HeaderSec3 {
@@ -645,73 +354,102 @@ b {
 
 .TextCenterSec3 {
     display: flex;
-    flex-direction: column;
     align-items: center;
-    margin-top: 120px;
-    margin-bottom: 50px;
+    margin-top: 170px;
+    gap: 70px;
+    border-bottom: solid 3px #000000;
+    width: 70%;
+    padding: 70px 0;
 }
 
 
 .pCenterSec3 {
-    font-size: 35px;
     font-weight: 600;
-    width: 950px;
-    border-bottom: solid 3px #000000;
     padding-bottom: 50px;
     margin-bottom: 60px;
     text-align: center;
     margin-top: 70px;
+    font-size: 25px;
+    width: 70%;
+    text-align: start;
 }
 
-.DivSec3{
+.ImageExampleSex3 {
+    max-width: 30%;
+}
+
+.DivSec3 {
     display: flex;
     flex-direction: column;
     align-items: center;
     gap: 59px;
 }
 
-.TitleMarks{
+.TitleMarks {
     font-size: 40px;
     font-weight: 900;
     margin-bottom: 35px;
     text-align: center;
+    margin-top: 120px;
 }
 
-.BladeMarks{
+.BladeMarks {
     display: flex;
     gap: 20px;
-    margin-bottom: 80px;
+    margin-bottom: 180px;
 }
 
-.DivMark{
+.DivMark {
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     background-color: rgba(255, 222, 0, 1);
     padding: 29px;
-    width: 225px;
-    height: 300px;
+    width: 200px;
+    height: 285px;
     gap: 25px;
     border-radius: 8px;
     cursor: pointer;
+    opacity: 0.5;
+    position: relative;
+    transition: ease 0.5s;
 }
-.DivMarkShow{
+
+.DivMark:hover {
+    opacity: 2;
+    transform: scale(1.1);
+    transform: translateY(-35px);
+}
+
+.DivBladeImage {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.5s;
     background-color: rgba(255, 222, 0, 1);
+    border-radius: 12px;
+}
+.DivBladeImage:hover{
+    opacity: 0;
 }
 
-.LogoMark{
-    max-width: 100%;
-    height: 25%;
+.LogoMark {
+    max-width: 70%;
+}
+.LogoMark1 {
+    max-width: 60%;
 }
 
-.TextMark{
+.TextMark {
     text-align: center;
     font-weight: 600;
-    display: none;
 }
 
-.TitleMaterial{
+.TitleMaterial {
     font-weight: 900;
     font-size: 30px;
     width: 220px;
@@ -719,7 +457,7 @@ b {
     margin-bottom: 50px;
 }
 
-.BladeMaterial{
+.BladeMaterial {
     display: flex;
     gap: 5px;
     background-color: #dbdbdb;
@@ -735,12 +473,12 @@ b {
     background-color: white;
 }
 
-.BladeExample{
+.BladeExample {
     max-width: 100%;
     height: auto;
 }
 
-.MaterialDescription{
+.MaterialDescription {
     text-align: center;
     font-size: 20px;
 }
@@ -749,7 +487,6 @@ b {
     width: 800px;
     font-size: 45px;
     text-align: center;
-    text-shadow: #6b6b6b 1px 1px 12px;
 }
 
 .IconSec3 {
@@ -880,7 +617,6 @@ b {
     font-weight: 600;
     margin-bottom: 15px;
     width: 540px;
-    text-shadow: #999999 1px 1px 12px;
 }
 
 .MaterialSec3 {
@@ -909,7 +645,6 @@ b {
     font-weight: 600;
     margin-bottom: 15px;
     width: 540px;
-    text-shadow: #999999 1px 1px 12px;
 }
 
 .AreaCare {
@@ -930,12 +665,12 @@ b {
     margin-bottom: 80px;
 }
 
-.DivsCare{
+.DivsCare {
     display: flex;
     gap: 50px;
 }
 
-.ContainerCare{
+.ContainerCare {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -945,17 +680,17 @@ b {
     box-shadow: rgba(0, 0, 0, 0.25) 8.95px 9.95px 12.6px;
 }
 
-.CareIcon{
+.CareIcon {
     max-width: 50%;
     margin-bottom: 30px;
 }
 
-.CareTitle{
+.CareTitle {
     font-weight: 900;
     margin-bottom: 8px;
 }
 
-.CareText{
+.CareText {
     text-align: center;
     font-weight: 600;
 }
@@ -968,7 +703,7 @@ b {
     display: flex;
     flex-direction: column;
     position: relative;
-    padding: 70px 40px;
+    padding: 70px 0;
     background: linear-gradient(180deg, rgb(0, 0, 0) 0%, rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 1) 8%, rgba(0, 0, 0, 1) 100%);
     align-items: center;
 }
@@ -980,42 +715,167 @@ b {
     position: relative;
     height: 100px;
     width: 100%;
-    margin-top: 200px;
+    margin-top: 270px;
+    gap: 75px;
+}
+
+.DivHeaderSec4 {
+    display: flex;
+    flex-direction: column;
+    width: 30%;
 }
 
 .TitleSec4 {
-    width: 800px;
-    font-size: 45px;
+    width: 450px;
+    font-size: 35px;
     color: white;
-    text-align: center;
-    text-shadow: white 1px 1px 12px;
+    margin-bottom: 20px;
 }
 
-.IconSec4 {
+.Text1Sec4 {
+    color: #b6b6b6;
+    margin-top: 20px;
+    font-size: 23px;
+}
+
+.DogExSec4 {
     max-width: 100%;
-    height: 170%;
-    transform: rotate(-10deg);
+    height: 450px;
 }
 
-.TextCenterSec4 {
+.MarksSec4 {
+    margin-top: 354px;
+    width: 100%;
+    background-color: #171717;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 120px 0;
+}
+
+.Area1Sec4 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top: 120px;
+    gap: 10px;
+    margin-bottom: 150px;
+}
+
+.ContainerCuidados {
+    display: flex;
+    gap: 43px;
+    position: relative;
+    top: -75px;
+}
+
+.DivCuidados {
+    display: flex;
+    justify-content: center;
+    background-color: #232323;
+    width: 275px;
+    flex-direction: column;
+    padding: 67px 15px 25px;
+    gap: 20px;
+    border-radius: 10px;
+}
+
+.TitleCuidado {
+    color: white;
+    font-weight: 700;
+    font-size: 25px;
+    width: 170px;
+}
+
+.TextCuidado {
+    color: #c8c8c8;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+.TextArea1 {
+    color: #ffcd00;
+    text-align: center;
+    font-size: 23px;
+    width: 50%;
+    padding: 15px;
+    border: 3px dashed;
 }
 
 
-.pCenterSec4 {
-    font-size: 35px;
-    font-weight: 600;
-    width: 950px;
-    border-bottom: solid 3px #000000;
-    padding-bottom: 50px;
-    margin-bottom: 60px;
+
+.Area2Sec4 {
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    align-items: center;
+}
+
+.TitleArea2 {
+    color: #ffffff;
     text-align: center;
-    margin-top: 70px;
-    color: white;
-    border-bottom: solid 2px #ffe400;
+    font-size: 40px;
+    width: 250px;
+}
+
+.ContainerMarks {
+    display: flex;
+    gap: 30px;
+}
+
+.DivMarksTesouras {
+    border: solid 3px #ffd100;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 27px 12px;
+    width: 260px;
+    gap: 12px;
+    border-radius: 12px;
+    position: relative;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.DivMarksTesouras:hover {
+    transform: translateY(-15px);
+    box-shadow: rgb(187, 162, 0) 0px 0px 37px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.DivLogoBlade {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    background-color: #252525;
+    border-radius: 12px;
+    transition: ease 0.5s;
+}
+
+.DivLogoBlade:hover {
+    opacity: 0;
+}
+
+.LogoBlade {
+    max-width: 60%;
+    position: absolute;
+}
+
+.TitleTesoura {
+    color: #ffcd00;
+    font-weight: 700;
+    font-size: 25px;
+}
+
+.TextTesoura {
+    color: #d5d5d5;
+    font-weight: 400;
+    text-align: center;
+    letter-spacing: 2px;
+    font-size: 15px;
 }
 
 .carousel {
@@ -1080,134 +940,741 @@ b {
     color: white;
 }
 
-.SpanSec4 {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-top: solid 2px #ffca00;
-    border-bottom: solid 2px #ffca00;
-    margin-top: 90px;
-}
-
-
-.TextsinDiv {
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-
 .textdivHSec4 {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    border-top: solid 2px #ffe400;
-    margin-top: 180px;
-    width: 70%;
+    margin-top: 200px;
 }
 
 .TextTitle {
-    color: #ffca00;
-    text-align: center;
-    font-size: 45px;
-    margin-top: 50px;
-    margin-bottom: 20px;
+    color: white;
+    font-size: 36px;
+    width: 300px;
+    margin-bottom: 100px;
 }
 
-.Textlorem {
-    color: white;
-    text-align: center;
-    width: 800px;
-    font-size: 28px;
-    font-weight: 800;
+.SpanSec4 {
+    display: flex;
+    gap: 45px;
 }
+
+.TesouradivText {
+    width: 380px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    padding: 8px;
+}
+
+.TitleTStext {
+    display: flex;
+    gap: 15px;
+}
+
+.NumberText {
+    background-color: yellow;
+    border-radius: 50px;
+    padding: 4px;
+    width: 33px;
+    text-align: center;
+    font-size: 20px;
+    font-weight: 700;
+}
+
+.TsText {
+    color: white;
+    font-size: 25px;
+    font-weight: 700;
+}
+
+.TextTs {
+    color: white;
+    font-size: 18px;
+}
+
 
 
 .divTextsSec4 {
     display: flex;
-    justify-content: space-around;
-    width: 100%;
-    padding: 35px;
-    gap: 35px;
-}
-
-.texth2 {
-    color: #ffca00;
-    font-size: 30px;
-    margin-bottom: 10px;
-    text-shadow: #ffc500bf 1px 1px 12px;
-}
-
-.textp {
-    color: white;
-    width: 640px;
-    font-size: 23px;
-    font-weight: 600;
-    text-shadow: white 1px 1px 8px;
+    gap: 25px;
+    margin-top: 150px;
 }
 
 .DivTextSec4 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 3px #745600;
+    padding: 20px;
+    width: 250px;
+    height: 320px;
+    background: rgb(66, 39, 0);
+    background: linear-gradient(0deg, rgba(66, 39, 0, 1) 0%, rgba(0, 0, 0, 1) 56%);
+    margin-bottom: 50px;
     cursor: pointer;
-    border-radius: 8px;
-    padding: 18px;
-    background: linear-gradient(138deg, rgb(17, 17, 17) 0%, rgb(34 28 6) 61%, rgb(17, 17, 17) 94%);
 }
 
 .DivTextSec4:hover {
-    transform: translateY(-10px);
-    box-shadow: rgba(132, 110, 0, 0.3) 0px 19px 38px, rgba(152, 142, 0, 0.22) 0px 15px 12px;
-    background-color: #111111;
+    transform: translateY(-15px);
+}
+
+.textp {
+    color: yellow;
+    font-weight: 700;
+    font-size: 37px;
+}
+
+.texth2 {
+    color: yellow;
+    font-weight: 700;
+    font-size: 55px;
+    margin-top: 68px;
 }
 
 
 /*SECTION5*/
 
 .Section5 {
-    min-height: 100vh;
-    background-color: gray;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #161616;
+    padding-bottom: 150px;
+}
+
+.HeaderSec5 {
+    background-image: url(./images/ExampleImages/BackDarkGray.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 70px 0;
+}
+
+.DivHeaderSec5 {
+    width: 50%;
+    height: 298px;
+    display: flex;
+    gap: 20px;
+    padding: 20px;
+    background-color: #282828;
+    margin-top: 25px;
+    border-radius: 12px;
+    align-items: center;
+}
+
+.spansHSec5 {}
+
+.HeadlineSec5 {
+    color: white;
+    font-weight: 700;
+    text-align: center;
+    font-size: 30px;
+    margin-bottom: 15px;
+}
+
+.TextHSec5 {
+    text-align: center;
+    color: #c2c2c2;
+    font-size: 20px;
+}
+
+.ExampleHSec5 {
+    max-width: 100%;
+    height: 100%;
+}
+
+
+
+.Sec5Part1 {
+    padding: 170px 0;
+}
+
+.TitlesSec5 {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.Sec5About {
+    text-align: center;
+    color: #d0ae04;
+    font-weight: 500;
+    letter-spacing: 2px;
+    font-size: 13px;
+}
+
+.Sec5Categories {
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    font-size: 37px;
+    letter-spacing: 2px;
+}
+
+.DivTosaTypes {
+    display: flex;
+    gap: 100px;
+    margin-top: 100px;
+}
+
+.ContainerTosas {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 260px;
+    gap: 55px;
+}
+
+.DivImageTosa {
+    position: relative;
+    border-radius: 500px;
+    height: 250px;
+    width: 250px;
+    overflow: hidden;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 30px 50px;
-    background: linear-gradient(180deg, rgba(0, 0, 0, 1) 0%, rgba(126, 126, 126, 1) 16%, rgba(126, 126, 126, 1) 100%);
+    border: solid 8px #3f3f3f;
 }
 
-.CenterSec5 {
+.TosaType {
+    position: absolute;
+    text-align: center;
+    color: white;
+    font-weight: 700;
+    text-shadow: 0px 3px 1px black;
+    font-size: 25px;
+    width: 150px;
+    z-index: 1;
+}
+
+.ExamplesTosa {
+    max-width: 150%;
+    height: 100%;
+    transition: all 0.8s;
+}
+
+.ExamplesTosa:hover {
+    transform: scale(1.1);
+}
+
+.TextsTosa {}
+
+.DescTosa {
+    text-align: center;
+    color: silver;
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.MoreAbout {
+    text-align: center;
+    color: #ffee00;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.MoreAbout:hover {
+    text-shadow: rgb(255, 213, 0) 1px 1px 15px;
+    transform: translateY(-5px);
+}
+
+
+
+.Sec5Part2 {
+    margin-top: 150px;
+}
+
+.TitlesMachines {
+    position: absolute;
+    left: 80px;
+}
+
+.TitleMachineType {
+    color: white;
+    font-size: 37px;
+    margin-bottom: 10px;
+}
+
+.DescTitle {
+    color: #ffe400;
+    font-size: 20px;
+}
+
+
+.DivPart2 {
+    width: 100%;
+    position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.h1Sec5 {
-    color: white;
-    font-size: 48px;
+.ContainerMachines {
+    display: flex;
+    margin-top: 320px;
+    gap: 90px;
 }
 
-.TextSec5 {
+.MachineType {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 25px;
+    width: 230px;
+    cursor: pointer;
+}
+
+.MachineTosa {
+    background-color: #2a2a2a;
+    border-radius: 8px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 270px;
+    width: 285px;
+    transition: all 0.5s;
+}
+
+.MachineTosa:hover {
+    transform: scale(1.02);
+    box-shadow: rgb(139, 139, 139) 0px 0px 37px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.MachineImg {
+    max-width: 100%;
+    height: 100%;
+    position: absolute;
+    top: -90px;
+    transition: all 0.5s;
+}
+
+.MachineImg:hover {
+    transform: scale(1.05);
+}
+
+.TitleCategory {
     color: white;
-    font-size: 25px;
-    width: 820px;
+    font-weight: 700;
     text-align: center;
+    position: absolute;
+    bottom: 25px;
+    font-size: 23px;
 }
 
-.DivMachines {}
+.DescMachine {
+    color: #9f9f9f;
+    text-align: center;
+    font-size: 18px;
+}
 
-.SecadorContainer {}
 
-.SecadorImage {}
 
-.SecadorTitle {}
 
-.SecadorDescription {}
+
+.DivPart3 {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 150px;
+    width: 80%;
+}
+
+.TitlePart3 {
+    text-align: center;
+    color: white;
+}
+
+.ContainerCuidados2 {
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 70px;
+}
+
+.DivCuidadosP3 {
+    display: flex;
+    align-items: center;
+    background-color: #282828;
+    gap: 8px;
+    padding: 15px 35px 15px 15px;
+    width: 432px;
+    border-radius: 12px;
+}
+
+.IconCuidados {
+    max-width: 100%;
+    height: 65%;
+}
+
+.CuidadosTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.TitleCuidados {
+    color: white;
+    font-weight: 700;
+}
+
+.DescCuidaoText {
+    color: #cacaca;
+    font-weight: 500;
+}
 
 
 /*SECTION6*/
 
 .Section6 {
-    height: 100vh;
-    background-color: white;
+    background-image: url(./images/Background3.png);
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 200vh;
+    padding-bottom: 70px;
+}
 
+.HeaderSec6 {
+    background-image: url(./images/Background2.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 85vh;
+    position: relative;
+    width: 100%;
+}
+
+.DivHeaderSec6 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    bottom: -250px;
+    position: relative;
+}
+
+.SpanHeaderSec6 {
+    width: 480px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    margin-right: 300px;
+}
+
+.H1HeaderSec6 {
+    color: white;
+    font-weight: 700;
+    font-size: 38px;
+}
+
+.pHeaderSec6 {
+    color: white;
+    font-size: 20px;
+}
+
+
+
+.ContainerSpan {
+    display: flex;
+    background-color: white;
+    width: 65%;
+    border-radius: 20px;
+}
+
+.BoxYellowSpan {
+    background-color: #ffdb00;
+    width: 600px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.TitleEquipament {
+    font-weight: 700;
+    font-size: 22px;
+}
+
+.SecadoresText {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.SopradoresText {
+    font-weight: 500;
+    font-size: 15px;
+}
+
+.FindEquipament {
+    color: white;
+    background-color: black;
+    height: 50px;
+    width: 234px;
+    font-size: 14px;
+    font-weight: 700;
+    margin-top: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.FindEquipament:hover {
+    transform: scale(1.03);
+}
+
+
+.QualitiesHeader {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 45px;
+    padding-top: 35px;
+}
+
+.ContainerQuality {
+    width: 130px;
+    display: flex;
+    justify-content: center;
+    gap: 8px;
+}
+
+.SearchIcon {
+    font-size: 25px;
+}
+
+.IconChecked {
+    max-width: 100%;
+    height: 25%;
+}
+
+.TextsQuality {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
+.TitleQuality {
+    font-weight: 700;
+    font-size: 18px;
+}
+
+.TextQuality {
+    font-weight: 500;
+    font-size: 13px;
+}
+
+.CuidadosSec6 {
+    width: 100%;
+    display: flex;
+    z-index: 2;
+    background-color: gray;
+    padding: 75px;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    margin-top: 400px;
+    flex-wrap: wrap;
+}
+
+.Sec6Cuidados {
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px;
+    gap: 20px;
+    width: 240px;
+    height: 260px;
+    justify-content: center;
+    position: relative;
+}
+
+.IconCuidadosS6 {
+    max-width: 100%;
+    height: 23%;
+    position: absolute;
+    top: -30px;
+    left: 30px;
+    border-radius: 8px;
+}
+
+.S6Cuidados1 {
+    font-weight: 700;
+    text-align: center;
+    font-size: 23px;
+}
+
+.S6Cuidados2 {
+    text-align: center;
+    font-weight: 500;
+    font-size: 18px;
+}
+
+
+
+.Sec6Marks {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+    justify-content: center;
+}
+
+.EQTitle {
+    font-weight: 700;
+    font-size: 30px;
+}
+
+.ContainerEQMarks {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 45px;
+    width: 60%;
+    justify-content: center;
+    margin-top: 80px;
+    align-items: center;
+}
+
+.EquipamentMark {
+    background-color: rgb(255, 255, 255);
+    height: 350px;
+    width: 250px;
+    border-radius: 12px;
+    cursor: pointer;
+    transition: ease 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+}
+
+.EquipamentMark:hover {
+    transform: translateY(-15px);
+    box-shadow: rgba(255, 221, 0, 0.352) 0px 0px 67px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.MarkLogo {
+    max-width: 90%;
+}
+
+.Minag {
+    background-color: rgb(48, 73, 155);
+}
+
+.Graçapet {
+    background-color: rgb(255, 221, 0);
+}
+
+.Hardwind {
+    background-color: rgb(167, 167, 167);
+}
+
+
+
+
+.EquipamentDiv {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 200px;
+}
+
+.DivEquipament {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    margin-top: 70px;
+}
+
+.ContainerEquip {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+}
+
+.SecadorBackground {
+    background-color: rgb(243, 243, 243);
+    border-radius: 12px;
+    height: 400px;
+    width: 300px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px;
+    cursor: pointer;
+    transition: ease 0.5s;
+    overflow: hidden;
+}
+
+.SecadorBackground:hover {
+    transform: translateY(-15px);
+    background-color: white;
+    box-shadow: rgba(255, 221, 0, 0.352) 0px 0px 67px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.SecadorImages {
+    max-width: 100%;
+    transition: ease 0.5s;
+}
+
+.SecadorImages:hover {
+    transform: scale(1.1);
+}
+
+.SecadorDesc {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    width: 350px;
+}
+
+.SopradorBackground {
+    background-color: rgb(243, 243, 243);
+    border-radius: 12px;
+    height: 330px;
+    width: 250px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 15px;
+    cursor: pointer;
+    transition: ease 0.5s;
+    overflow: hidden;
+}
+
+.SopradorBackground:hover {
+    transform: translateY(-15px);
+    background-color: white;
+    box-shadow: rgba(255, 221, 0, 0.352) 0px 0px 67px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.SopradorImages {
+    max-width: 100%;
+    transition: ease 0.5s;
+}
+
+.SopradorImages:hover {
+    transform: scale(1.2);
+}
+
+.SopradorDesc {
+    text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    width: 300px;
 }
 
 @media screen and (max-width: 900px) {
@@ -1220,78 +1687,26 @@ b {
         position: fixed;
     }
 
-    /* BLUR & BLUR2*/
-    .Menu1 {
-        width: 90%;
-    }
-
-    .Description {
-        width: 180%;
-    }
-
-    .BladesSelections {
-        grid-template-columns: repeat(13, 1fr);
-        overflow-x: scroll;
-        width: 80%;
-    }
-
-    .Menu2 {
-        width: 95%;
-        padding: 15px;
-        height: 65%;
-    }
-
-    .CompButtons {
-        display: flex;
-        width: 100%;
-        justify-content: space-between;
-        align-items: center;
-        padding: 0;
-        margin-bottom: 20px;
-    }
-
-    .DivimageSelected {
-        height: 120px;
-        width: 120px;
-    }
-
-    .CompareBlades {
-        gap: 10;
-    }
-
-    .CompareImage {
-        width: 25%;
-    }
-
-    .DivimageSelected2 {
-        height: 120px;
-        width: 120px;
-    }
-
-    .CompDescription {
-        width: 100%;
-        font-size: 15px;
-    }
-
-    .OtherBlades {
-        width: 100%;
-        overflow-x: scroll;
-        justify-content: start;
-    }
-
-    .DivimageSelection {
-        height: 100px;
-        width: 100px;
-    }
-
     /*HEADER elements*/
+    .MenuHeader {
+        display: flex;
+    }
 
     .Header {
-        padding: 0 20px 0 10px;
+        padding: 0 20px 0 20px;
     }
 
-    .NavBar {
+    .NavBar ul {
         display: none;
+        gap: 40px;
+        margin-right: 25px;
+        flex-direction: column;
+        position: fixed;
+        top: 15px;
+        right: -125px;
+        background-color: #2a2a2a;
+        padding: 25px;
+        border-radius: 10px;
     }
 
     /* SECTION 1*/
@@ -1400,11 +1815,21 @@ b {
 
     .TextCenterSec3 {
         margin-top: 30px;
+        flex-direction: column;
+        width: 100%;
+        gap: 0;
     }
 
     .pCenterSec3 {
-        width: 90%;
         font-size: 20px;
+        font-size: 16px;
+        width: 90%;
+        text-align: start;
+        margin-bottom: 0;
+    }
+
+    .ImageExampleSex3 {
+        max-width: 60%;
     }
 
     .BladeMarks {
