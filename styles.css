@@ -17,6 +17,239 @@ b {
     color: #ffcc00;
 }
 
+/* Selections */
+
+.Blur {
+    position: fixed;
+    z-index: 7;
+    height: 100%;
+    width: 100%;
+    background-color: #00000069;
+    display: none;
+    justify-content: center;
+    opacity: 0;
+}
+
+.Selection1 {
+    height: 85%;
+    width: 60%;
+    background-color: #ffffff47;
+    position: absolute;
+    bottom: -800px;
+    border-top-right-radius: 25px;
+    border-top-left-radius: 25px;
+    backdrop-filter: blur(7px);
+    display: flex;
+    flex-direction: column;
+    padding: 45px 150px 0;
+    align-items: center;
+}
+
+.CloseButton {
+    color: white;
+    position: absolute;
+    right: 20px;
+    top: 13px;
+    font-size: 25px;
+    cursor: pointer;
+    text-align: center;
+    height: 30px;
+    width: 30px;
+    transition: ease 0.5s;
+}
+
+.CloseButton:hover {
+    text-shadow: 0 0 15px white;
+}
+
+
+
+.BladeSInfo {
+    display: flex;
+    gap: 20px;
+}
+
+.ContainerBlades {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    position: relative;
+}
+
+.BladeSelected {
+    width: 170px;
+    height: 170px;
+    border-radius: 500px;
+    overflow: hidden;
+    display: flex;
+    border: solid black 5px;
+}
+
+.BladeImageS {
+    max-width: 100%;
+    transition: ease 0.3s;
+    position: absolute;
+    border-radius: 500px;
+    left: 0;
+    top: 6px;
+    z-index: -1;
+}
+
+
+.fadeIMG1{
+    opacity: 1;
+    z-index: -1;
+    transition: ease 1s;
+}
+
+.fadeIMG2{
+    opacity: 1;
+    z-index: -2;
+    transition: ease 1s;
+}
+
+.fadeIMG3{
+    opacity: 1;
+    z-index: -3;
+    transition: ease 1s;
+}
+
+.fadeIMG4{
+    opacity: 1;
+    z-index: -4;
+    transition: ease 1s;
+}
+
+.fadeIMG5{
+    opacity: 1;
+    z-index: -5;
+    transition: ease 1s;
+}
+
+.BladeImageS:hover {
+    transform: scale(1.1);
+}
+
+.DivBladeNumber {
+    background-color: black;
+    padding: 3px 10px;
+    position: absolute;
+    top: -5px;
+}
+
+.BladeNumber {
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.DivBladePrice {
+    background-color: black;
+    padding: 3px 10px;
+    position: absolute;
+    top: 150px;
+}
+
+.BladePrice {
+    color: white;
+    font-size: 15px;
+}
+
+.DivIconsShop {
+    display: flex;
+    gap: 15px;
+}
+
+.ShopImgIcon {
+    max-width: 100%;
+}
+
+.IconsShop {
+    background-color: rgb(255, 242, 0);
+    border-radius: 500px;
+    width: 40px;
+    height: 40px;
+    padding: 7px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    transition: ease 0.3s;
+}
+
+.IconsShop:hover {
+    transform: translateY(-3px);
+    padding: 5px;
+}
+
+.ContainerBladeInfo {}
+
+.bBlack {
+    color: black;
+}
+
+.BladeInformation {
+    margin-bottom: 8px;
+    color: rgb(255 255 255);
+    font-weight: 500;
+    text-shadow: 1px 1px black;
+    font-size: 18px;
+}
+
+
+
+.ContainerProductsBlade {
+    width: 80%;
+    margin-top: 80px;
+    display: flex;
+    gap: 40px;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+}
+
+.DivProduct {
+    height: 115px;
+    width: 115px;
+    position: relative;
+    cursor: pointer;
+}
+
+.DivBladeP {
+    border: solid;
+    height: 100%;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+}
+
+.BladeImageP {
+    max-width: 100%;
+    transition: ease 0.3s;
+}
+
+.BladeImageP:hover {
+    transform: scale(1.2);
+}
+
+.BladeImageP:active {
+    opacity: 0.5;
+}
+
+.DivPrice {
+    position: absolute;
+    background-color: black;
+    padding: 3px;
+    bottom: -12px;
+    left: 20px;
+}
+
+.PriceBlade {
+    color: white;
+    font-size: 13px;
+    text-align: center;
+}
+
 /* HEADER */
 
 .Header {
@@ -29,7 +262,7 @@ b {
     background: linear-gradient(141deg, rgba(0, 0, 0, 1) 0%, rgba(24, 24, 24, 1) 82%, rgba(29, 29, 29, 1) 100%);
     padding: 0 90px 0 70px;
     position: fixed;
-    z-index: 99;
+    z-index: 5;
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     transition: ease 1s;
 }
@@ -52,17 +285,18 @@ b {
 }
 
 .Navli {
-    color: rgb(255, 213, 0);
+    color: rgb(255, 255, 255);
     font-weight: 500;
     cursor: pointer;
     position: relative;
-    opacity: 0.8;
+    opacity: 0.6;
+    transition: ease 0.5s;
 }
 
 .Navli:hover {
-    opacity: 1;
+    opacity: 2;
     transform: translateY(-5px);
-    text-shadow: rgb(255, 213, 0) 1px 1px 8px;
+    text-shadow: rgb(255, 255, 255) 1px 1px 8px;
 }
 
 .Navli::after {
@@ -70,9 +304,9 @@ b {
     position: absolute;
     width: 0;
     height: 3px;
-    background-color: rgb(255, 213, 0);
+    background-color: rgb(255, 255, 255);
     left: 0;
-    bottom: -38px;
+    bottom: -40px;
     transition: ease 0.5s;
 }
 
@@ -104,7 +338,7 @@ b {
 
 .divSec1 {
     display: flex;
-    margin-top: 105px;
+    margin-top: 170px;
     flex-direction: column;
     align-items: center;
     gap: 20px;
@@ -196,8 +430,9 @@ b {
 }
 
 .TextSex2 {
-    color: #717171;
+    color: #fffedd;
     font-size: 20px;
+    text-shadow: rgb(255, 255, 255) 1px 1px 8px;
 }
 
 .ButtonSec2 {
@@ -356,26 +591,27 @@ b {
     display: flex;
     align-items: center;
     margin-top: 170px;
-    gap: 70px;
+    gap: 40px;
     border-bottom: solid 3px #000000;
-    width: 70%;
+    width: 80%;
     padding: 70px 0;
 }
 
+.PsCenterTexts {
+    display: flex;
+    flex-direction: column;
+}
 
 .pCenterSec3 {
     font-weight: 600;
     padding-bottom: 50px;
-    margin-bottom: 60px;
-    text-align: center;
-    margin-top: 70px;
-    font-size: 25px;
-    width: 70%;
+    font-size: 23px;
+    width: 90%;
     text-align: start;
 }
 
 .ImageExampleSex3 {
-    max-width: 30%;
+    max-width: 35%;
 }
 
 .DivSec3 {
@@ -433,13 +669,15 @@ b {
     background-color: rgba(255, 222, 0, 1);
     border-radius: 12px;
 }
-.DivBladeImage:hover{
+
+.DivBladeImage:hover {
     opacity: 0;
 }
 
 .LogoMark {
     max-width: 70%;
 }
+
 .LogoMark1 {
     max-width: 60%;
 }
@@ -468,8 +706,8 @@ b {
     flex-direction: column;
     align-items: center;
     gap: 30px;
-    width: 254px;
-    padding: 15px 18px;
+    width: 354px;
+    padding: 15px 60px;
     background-color: white;
 }
 
@@ -830,12 +1068,13 @@ b {
     align-items: center;
     justify-content: center;
     padding: 27px 12px;
-    width: 260px;
+    width: 230px;
     gap: 12px;
     border-radius: 12px;
     position: relative;
     cursor: pointer;
     transition: ease 0.5s;
+    height: 285px;
 }
 
 .DivMarksTesouras:hover {
@@ -1012,6 +1251,7 @@ b {
     background: rgb(66, 39, 0);
     background: linear-gradient(0deg, rgba(66, 39, 0, 1) 0%, rgba(0, 0, 0, 1) 56%);
     margin-bottom: 50px;
+    transition: ease 0.5s;
     cursor: pointer;
 }
 
@@ -1332,9 +1572,9 @@ b {
 /*SECTION6*/
 
 .Section6 {
+    display: flex;
     background-image: url(./images/Background3.png);
     background-size: cover;
-    display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 200vh;
@@ -1703,10 +1943,58 @@ b {
         flex-direction: column;
         position: fixed;
         top: 15px;
-        right: -125px;
+        right: -425px;
         background-color: #2a2a2a;
         padding: 25px;
         border-radius: 10px;
+        transition: ease 0.5s;
+    }
+
+    /* SELECTIONS BLADES */
+    .Selection1 {
+        padding: 10px;
+        width: 95%;
+        min-height: 85%;
+        border-radius: 20px;
+    }
+
+    .BladeSInfo {
+        flex-direction: column;
+    }
+
+    .CloseButton{
+        z-index: 2;
+    }
+
+    .BladeSelected {
+        height: 180px;
+        width: 180px;
+    }
+
+    .DivBladePrice {
+        top: 160px;
+    }
+
+    .ContainerBladeInfo {
+        width: 100%;
+    }
+
+    .ContainerProductsBlade {
+        justify-content: center;
+        margin-top: 20px;
+    }
+
+    .DivProduct {
+        height: 170px;
+        width: 170px;
+    }
+
+    .DivPrice{
+        left: 33px;
+    }
+
+    .PriceBlade{
+        font-size: 18px;
     }
 
     /* SECTION 1*/
@@ -1804,8 +2092,8 @@ b {
     }
 
     .TitleSec3 {
-        font-size: 19px;
-        width: 70%;
+        font-size: 30px;
+        width: 100%;
     }
 
     .IconSec3 {
@@ -1820,21 +2108,25 @@ b {
         gap: 0;
     }
 
+    .PsCenterTexts{
+        align-items: center;
+    }
+
     .pCenterSec3 {
         font-size: 20px;
-        font-size: 16px;
+        font-size: 24px;
         width: 90%;
-        text-align: start;
-        margin-bottom: 0;
+        text-align: center;
+        margin-bottom: 50px;
     }
 
     .ImageExampleSex3 {
-        max-width: 60%;
+        max-width: 85%;
     }
 
     .BladeMarks {
         display: flex;
-        gap: 20px;
+        gap: 40px;
         margin-bottom: 80px;
         flex-direction: column;
     }
@@ -1843,16 +2135,18 @@ b {
         align-items: center;
         justify-content: center;
         width: 205px;
-        height: 200px;
+        height: 300px;
     }
 
     .LogoMark {
-        max-width: 100%;
-        height: 40%;
+        max-width: 70%;
     }
 
     .BladeMaterial {
         flex-direction: column;
+        background: transparent;
+        gap: 60px;
+        margin-bottom: 170px;
     }
 
     .carousel {
@@ -1917,7 +2211,83 @@ b {
     }
 
     .HeaderSec4 {
-        margin-top: 140px;
+        margin-top: 340px;
+        flex-direction: column;
+    }
+
+    .DivHeaderSec4 {
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        align-items: center;
+        margin-top: 350px;
+    }
+
+    .TitleSec4 {
+        font-size: 30px;
+        text-align: center;
+        width: 90%;
+        margin-bottom: 80px;
+    }
+
+    .ContainerCuidados {
+        flex-direction: column;
+    }
+
+    .DogExSec4 {
+        max-width: 100%;
+        height: 280%;
+    }
+
+    .MarksSec4 {
+        margin-top: 850px;
+        width: 100%;
+    }
+
+    .Area1Sec4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 10px;
+        margin-bottom: 120px;
+    }
+
+    .TextArea1 {
+        color: #ffcd00;
+        text-align: center;
+        font-size: 23px;
+        width: 95%;
+        padding: 15px;
+        border: 3px dashed;
+        margin-top: 20px;
+    }
+
+    .Area2Sec4 {
+        display: flex;
+        flex-direction: column;
+        gap: 100px;
+        align-items: center;
+    }
+
+    .ContainerMarks {
+        display: flex;
+        gap: 30px;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .ScissorsContainer {
+        width: 263px;
+    }
+
+    .ScissorsName {
+        font-size: 24px;
+    }
+
+    .ScissorsDescription {
+        text-align: center;
+        font-size: 20px;
     }
 
     .ScissorsContainer::after {
@@ -1926,8 +2296,32 @@ b {
         top: -45px;
     }
 
-    .TitleSec4 {
+    .textdivHSec4 {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 170px;
+        overflow: hidden;
+    }
+
+    .SpanSec4 {
+        display: flex;
+        gap: 45px;
+        flex-wrap: wrap;
+    }
+
+    .TitleTStext {
+        justify-content: center;
+    }
+
+    .TextTs {
+        color: white;
         font-size: 18px;
+        text-align: center;
+    }
+
+    .TextTitle {
+        font-size: 35px;
+        text-align: center;
     }
 
     .IconSec4 {
@@ -1950,15 +2344,276 @@ b {
     }
 
     .divTextsSec4 {
-        display: flex;
-        justify-content: space-around;
         width: 100%;
+        margin-top: 50px;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
         flex-direction: column;
     }
 
+    .DivTextSec4 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        border: solid 3px #745600;
+        padding: 20px;
+        width: 250px;
+        height: 285px;
+        background: linear-gradient(0deg, rgba(66, 39, 0, 1) 0%, rgba(0, 0, 0, 1) 56%);
+        margin-bottom: 0;
+        transition: ease 0.5s;
+        cursor: pointer;
+    }
+
     .textp {
-        font-size: 20px;
+        font-size: 30px;
         width: 100%;
+        text-align: center;
+    }
+
+    .texth2 {
+        color: yellow;
+        font-weight: 700;
+        font-size: 70px;
+        margin-top: 52px;
+    }
+
+
+
+    .Section5 {
+        padding-bottom: 100px;
+    }
+
+    .HeaderSec5 {
+        align-items: center;
+    }
+
+    .DivHeaderSec5 {
+        width: 90%;
+        height: 650px;
+        gap: 0px;
+        padding: 20px;
+        margin-top: 25px;
+        align-items: center;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .HeadlineSec5 {
+        text-align: center;
+        font-size: 30px;
+        margin-bottom: 15px;
+    }
+
+    .TextHSec5 {
+        text-align: center;
+        font-size: 20px;
+    }
+
+    .ExampleHSec5 {
+        max-width: 85%;
+        height: 45%;
+    }
+
+    .Sec5Categories {
+        font-size: 37px;
+    }
+
+    .DivTosaTypes {
+        display: flex;
+        gap: 100px;
+        margin-top: 100px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .Sec5Part2 {
+        margin-top: 0;
+    }
+
+    .TitlesMachines {
+        left: 0;
+        padding: 20px;
+    }
+
+    .TitleMachineType {
+        font-size: 37px;
+        text-align: center;
+    }
+
+    .DescTitle {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .ContainerMachines {
+        margin-top: 380px;
+        gap: 150px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .MachineTosa {
+        height: 250px;
+        width: 260px;
+        transition: all 0.5s;
+    }
+
+    .TitleCategory {
+        font-size: 25px;
+    }
+
+    .DivPart3 {
+        align-items: center;
+        flex-direction: column;
+        margin-top: 150px;
+        width: 80%;
+    }
+
+    .TitlePart3 {
+        font-size: 30px;
+    }
+
+    .DivCuidadosP3 {
+        gap: 0px;
+        padding: 8px;
+        width: 85%;
+        flex-wrap: wrap;
+        justify-content: center;
+        height: 300px;
+    }
+
+    .IconCuidados {
+        max-width: 100%;
+        height: 30%;
+    }
+
+    .TitleCuidados {
+        text-align: center;
+        font-size: 25px;
+    }
+
+    .DescCuidaoText {
+        text-align: center;
+        font-size: 17px;
+    }
+
+
+
+
+    .DivHeaderSec6 {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 60px;
+        bottom: -250px;
+        position: relative;
+        margin-top: 400px;
+    }
+
+    .SpanHeaderSec6 {
+        width: 90%;
+        margin-right: 0;
+    }
+
+    .H1HeaderSec6 {
+        font-size: 38px;
+        text-align: center;
+    }
+
+    .pHeaderSec6 {
+        font-size: 20px;
+        text-align: center;
+    }
+
+    .ContainerSpan {
+        display: flex;
+        background-color: white;
+        width: 85%;
+        border-radius: 20px;
+        flex-direction: column;
+    }
+
+    .BoxYellowSpan {
+        background-color: #ffdb00;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
+
+    .TitleEquipament {
+        font-size: 30px;
+        text-align: center;
+    }
+
+    .SecadoresText {
+        font-size: 18px;
+    }
+
+    .SopradoresText {
+        font-size: 18px;
+    }
+
+    .QualitiesHeader {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 50px;
+        padding-top: 35px;
+        padding-bottom: 25px;
+    }
+
+    .ContainerQuality {
+        width: 200px;
+        display: flex;
+        justify-content: center;
+        gap: 8px;
+        height: 150px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .IconChecked {
+        max-width: 100%;
+        height: 35%;
+    }
+
+    .TextsQuality {
+        display: flex;
+        flex-direction: column;
+        gap: 12px;
+        align-items: center;
+    }
+
+    .TitleQuality {
+        font-size: 25px;
+    }
+
+    .TextQuality {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .CuidadosSec6 {
+        width: 100%;
+        z-index: 2;
+        padding: 75px;
+        gap: 40px;
+        align-items: center;
+        justify-content: center;
+        margin-top: 900px;
+    }
+
+    .Sec6Marks {
+        justify-content: center;
+    }
+
+    .DivEquipament {
+        justify-content: center;
     }
 
 }
