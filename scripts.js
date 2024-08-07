@@ -44,11 +44,11 @@ const fade3 = document.querySelectorAll('.fadeIMG3')
 const fade4 = document.querySelectorAll('.fadeIMG4')
 const fade5 = document.querySelectorAll('.fadeIMG5')
 
-let image1 = Array.from(fade1)
-let image2 = Array.from(fade2)
-let image3 = Array.from(fade3)
-let image4 = Array.from(fade4)
-let image5 = Array.from(fade5)
+const image1 = Array.from(fade1)
+const image2 = Array.from(fade2)
+const image3 = Array.from(fade3)
+const image4 = Array.from(fade4)
+const image5 = Array.from(fade5)
 
 
 let intervalo
@@ -116,21 +116,7 @@ function stopChangeImages() {
 /* ALTERAR INFORMAÇÕES */
 
 function changeProduct1(imgsrc) {
-    image1.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Andis/LM10.png";
-    })
-    image2.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Oster/OLM10.png";
-    })
-    image3.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Precision/PLM10.png";
-    })
-    image4.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Propetz/PTLM10.png";
-    })
-    image5.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Wahl/WLM10.png";
-    })
+    
 
     const BladeImageS = document.querySelector('#imgsrc1')
     BladeImageS.src = imgsrc.src
@@ -326,6 +312,7 @@ function changeProduct1(imgsrc) {
     }
 }
 function changeProduct2(imgsrc) {
+    
     const BladeImageS = document.querySelector('#imgsrc2')
     BladeImageS.src = imgsrc.src
 
@@ -337,22 +324,6 @@ function changeProduct2(imgsrc) {
     const BladePrice = document.querySelector('#AcBladePrice2')
     const LinkML = document.querySelector('#LinkML2')
     const LinkWA = document.querySelector('#LinkWA2')
-
-    image1.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Oster/OLM5.png";
-    })
-    image2.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Precision/PLM5.png";
-    })
-    image3.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Propetz/PTLM5F.png";
-    })
-    image4.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Wahl/WLM5.png";
-    })
-    image5.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Andis/LM5fc.png";
-    })
 
     if (imgsrc.id === 'DSBlade1') {
 
@@ -622,21 +593,6 @@ function changeProduct2(imgsrc) {
     }
 }
 function changeProduct3(imgsrc) {
-    image1.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Propetz/PTLM10.png";
-    })
-    image2.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Wahl/WLM10.png";
-    })
-    image3.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Andis/LM10.png";
-    })
-    image4.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Oster/OLM10.png";
-    })
-    image5.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Precision/PLM10.png";
-    })
 
     const BladeImageS = document.querySelector('#imgsrc3')
     BladeImageS.src = imgsrc.src
@@ -949,22 +905,7 @@ function changeProduct3(imgsrc) {
     }
 }
 function changeProduct4(imgsrc) {
-    image1.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Oster/OLM10.png";
-    })
-    image2.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Precision/PLM10.png";
-    })
-    image3.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Propetz/PTLM10.png";
-    })
-    image4.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Wahl/WLM10.png";
-    })
-    image5.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Andis/LM10.png";
-    })
-
+    
     const BladeImageS = document.querySelector('#imgsrc4')
     BladeImageS.src = imgsrc.src
 
@@ -1216,22 +1157,7 @@ function changeProduct4(imgsrc) {
     }
 }
 function changeProduct5(imgsrc) {
-    image1.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Wahl/WLM34.png";
-    })
-    image2.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Andis/LM3.png";
-    })
-    image3.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Oster/OLM3.png";
-    })
-    image4.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Precision/PLM34.png";
-    })
-    image5.forEach(imagem => {
-        imagem.src = "./images/Laminas&Tesouras/Propetz/PTLM3F.png";
-    })
-
+    
     const BladeImageS = document.querySelector('#imgsrc5')
     BladeImageS.src = imgsrc.src
 
@@ -1517,6 +1443,22 @@ async function OpenSele(event) {
     const bladeId = checkID(event)
     if (bladeId === 'Acabamento') {
         console.log("Acabamento")
+        
+        image1.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Andis/LM10.png";
+        })
+        image2.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Oster/OLM10.png";
+        })
+        image3.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Precision/PLM10.png";
+        })
+        image4.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Propetz/PTLM10.png";
+        })
+        image5.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Wahl/WLM10.png";
+        })
 
         await new Promise(resolve => setTimeout(resolve, 200))
         SeleBlade1.style.bottom = '0px'
@@ -1524,11 +1466,43 @@ async function OpenSele(event) {
     } if (bladeId === 'Ajuste') {
         console.log("Ajuste")
 
+        image1.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Propetz/PTLM10.png";
+        })
+        image2.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Wahl/WLM10.png";
+        })
+        image3.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Andis/LM10.png";
+        })
+        image4.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Oster/OLM10.png";
+        })
+        image5.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Precision/PLM10.png";
+        })
+
         await new Promise(resolve => setTimeout(resolve, 200))
         SeleBlade2.style.bottom = '0px'
 
     } if (bladeId === 'Desbaste') {
         console.log("Desbaste")
+
+        image1.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Oster/OLM5.png";
+        })
+        image2.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Precision/PLM5.png";
+        })
+        image3.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Propetz/PTLM5F.png";
+        })
+        image4.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Wahl/WLM5.png";
+        })
+        image5.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Andis/LM5fc.png";
+        })    
 
         await new Promise(resolve => setTimeout(resolve, 200))
         SeleBlade3.style.bottom = '0px'
@@ -1536,12 +1510,44 @@ async function OpenSele(event) {
     } if (bladeId === 'AcabamentoHigienica') {
         console.log("AcabamentoHigienica")
 
+        image1.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Oster/OLM10.png";
+        })
+        image2.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Precision/PLM10.png";
+        })
+        image3.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Propetz/PTLM10.png";
+        })
+        image4.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Wahl/WLM10.png";
+        })
+        image5.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Andis/LM10.png";
+        })    
+
         await new Promise(resolve => setTimeout(resolve, 200))
         SeleBlade4.style.bottom = '0px'
 
     } if (bladeId === 'DesbasteHigienica') {
         console.log("DesbasteHigienica")
 
+        image1.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Wahl/WLM34.png";
+        })
+        image2.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Andis/LM3.png";
+        })
+        image3.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Oster/OLM3.png";
+        })
+        image4.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Precision/PLM34.png";
+        })
+        image5.forEach(imagem => {
+            imagem.src = "./images/Laminas&Tesouras/Propetz/PTLM3F.png";
+        })
+    
         await new Promise(resolve => setTimeout(resolve, 200))
         SeleBlade5.style.bottom = '0px'
 
