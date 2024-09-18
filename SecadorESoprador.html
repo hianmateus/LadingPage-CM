@@ -64,6 +64,126 @@
         </header>
 
         <section class="Section6">
+
+            <div class="BlurSec6">
+                <div class="MachinesSelect">
+                    <div class="SelectDiv1">
+                        <div class="SelectArrow">
+                            <button class="NextSelect">
+                                <i class='bx bx-chevron-left IconNextArrow' onclick="BackEquip()"></i>
+                            </button>
+                            <button class="NextSelect">
+                                <i class='bx bx-chevron-right IconNextArrow' onclick="NextEquip()"></i>
+                            </button>
+                        </div>
+                        <img class="ImageSelect" src="./images/Marcas/Kyklon/SecadorKyklon.png"
+                            alt="Product-Machine-Example-png">
+
+                        <div class="TextsSelectPrice">
+                            <p class="SelectPrice1">Preço Estimado</p>
+
+                            <div class="DivPriceSelect">
+                                <p class="SelectPrice2">R$ 1.500,00 a R$ 2.000,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="DivSelectInfo">
+                        <p class="ButtonCloseSelect" onclick="CloseSelectEquip()">X</p>
+
+                        <img class="LogoMachineSelect" src="./images/Marcas/Kyklon/LogoKyklon.png"
+                            alt="Logo-Machine-png">
+
+                        <div class="InformationsTexts">
+                            <div class="TextSelectInfo">
+                                <img class="IconSelectInfo" src="./images/Icons/IconPower.png" alt="Icon-Especific-png">
+
+                                <p class="SelectInformation" id="Potencia"><b class="SelectBtext">Potência:</b> 2.800 watts</p>
+                            </div>
+
+                            <div class="TextSelectInfo">
+                                <img class="IconSelectInfo" src="./images/Icons/IconWeight.png"
+                                    alt="Icon-Especific-png">
+
+                                <p class="SelectInformation" id="Peso"><b class="SelectBtext">Peso:</b> 4.5 kg</p>
+                            </div>
+
+                            <div class="TextSelectInfo">
+                                <img class="IconSelectInfo" src="./images/Icons/IconSound.png" alt="Icon-Especific-png">
+
+                                <p class="SelectInformation" id="Ruido"><b class="SelectBtext">Nivel de ruido:</b> 2.800 watts</p>
+                            </div>
+
+                            <div class="TextSelectInfo">
+                                <img class="IconSelectInfo" src="./images/Icons/IconTemp.png" alt="Icon-Especific-png">
+
+                                <p class="SelectInformation" id="Temperatura"><b class="SelectBtext">Ajuste de Temperatura:</b> Sim (2
+                                    níveis)
+                                </p>
+                            </div>
+
+                            <div class="TextSelectInfo">
+                                <img class="IconSelectInfo" src="./images/Icons/IconSpeed.png" alt="Icon-Especific-png">
+
+                                <p class="SelectInformation" id="Velocidade"><b class="SelectBtext">Ajuste de Velocidade:</b> Sim (2
+                                    velocidades)s</p>
+                            </div>
+                        </div>
+
+                        <p class="SelectDifferent" id="Diferencial"><b class="SelectBtext">Diferenciais:</b> Alta durabilidade e
+                            eficiência
+                            energética; Design
+                            ergonômico para uso prolongado; Reconhecido pela robustez</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="Blur2Sec6">
+                <div class="MarksInfo">
+                    <p class="CloseMarkDiv" onclick="CloseMark()">X</p>
+
+                    <div class="InforPart1">
+                        <img class="LogoMarkMC" src="./images/Marcas/Kyklon/LogoKyklon.png"
+                            alt="Logo-Example-Machines-png" loading="lazy">
+
+                        <p class="TextInfoMC1">A Kyklon é uma marca reconhecida no mercado pet por oferecer sopradores
+                            de alta potência e durabilidade. Seus produtos são conhecidos pela robustez, garantindo um
+                            fluxo de ar consistente e eficiente</p>
+                    </div>
+
+                    <div class="InforPart2">
+                        <div class="textStructure">
+                            <img class="IconInfo" src="./images/Icons/iconStructure.png" alt="" loading="lazy">
+
+                            <p class="TextInfoMC2">Estrutura em materiais resistentes como alumínio, garantindo durabilidade</p>
+                        </div>
+
+                        <img class="MCExample" src="./images/ExampleImages/MarkExample.png" alt="" loading="lazy">
+                    </div>
+
+                    <div class="InforPart3">
+                        <div class="DivIconsInfo3">
+                            <img class="IconInfoMC" src="./images/Icons/IconPower.png" alt="" loading="lazy">
+
+                            <p class="TextInfoMC2">Alta potência e durabilidade</p>
+                        </div>
+
+                        <div class="DivIconsInfo3">
+                            <img class="IconInfoMC" src="./images/Icons/IconSpeed.png" alt="" loading="lazy">
+
+                            <p class="TextInfoMC2">Modelos com ajuste de velocidade</p>
+                        </div>
+
+                        <div class="DivIconsInfo3">
+                            <img class="IconInfoMC" src="./images/Icons/iconDesign.png" alt="" loading="lazy">
+
+                            <p class="TextInfoMC2">Design ergonômico</p>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+
             <header class="HeaderSec6">
                 <div class="DivHeaderSec6">
                     <div class="SpanHeaderSec6">
@@ -83,8 +203,8 @@
                             <p class="SopradoresText">Os sopradores, utilizam o ar em alta velocidade, geralmente sem
                                 calor ou com calor mínimo, para soprar a água e a sujeira do pelo do animal</p>
 
-                            <button class="FindEquipament">Econtre o equipamento ideal <i
-                                    class='bx bx-search-alt-2 SearchIcon'></i> </button>
+                            <button class="FindEquipament" onclick="scrollToPosition()">Econtre o equipamento ideal <i
+                                    class='bx bx-search-alt-2 bx-tada SearchIcon'></i> </button>
                         </div>
 
                         <div class="QualitiesHeader">
@@ -168,38 +288,38 @@
 
                 <div class="ContainerEQMarks">
                     <div data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
-                        <div class="EquipamentMark">
+                        <div class="EquipamentMark" value="Kyklon">
                             <img class="MarkLogo" src="./images/Marcas/Kyklon/LogoKyklon.png" alt="Kyklon-mark-png">
                         </div>
                     </div>
 
                     <div data-aos="flip-left" data-aos-delay="400" data-aos-duration="1000">
-                        <div class="EquipamentMark Minag">
+                        <div class="EquipamentMark Minag" value="Minag">
                             <img class="MarkLogo" src="./images/Marcas/Minag/LogoMinag.png" alt="Kyklon-mark-png">
                         </div>
                     </div>
 
                     <div data-aos="flip-left" data-aos-delay="600" data-aos-duration="1000">
-                        <div class="EquipamentMark">
+                        <div class="EquipamentMark" value="Plenitude">
                             <img class="MarkLogo" src="./images/Marcas/Plenitude/LogoPlenitude.png"
                                 alt="Kyklon-mark-png">
                         </div>
                     </div>
 
                     <div data-aos="flip-left" data-aos-delay="800" data-aos-duration="1000">
-                        <div class="EquipamentMark Graçapet">
+                        <div class="EquipamentMark Graçapet" value="GraçaPet">
                             <img class="MarkLogo" src="./images/Marcas/GraçaPet/LogoGraçapet.png" alt="Kyklon-mark-png">
                         </div>
                     </div>
 
                     <div data-aos="flip-left" data-aos-delay="1000" data-aos-duration="1000">
-                        <div class="EquipamentMark Hardwind">
+                        <div class="EquipamentMark Hardwind" value="HardWind">
                             <img class="MarkLogo" src="./images/Marcas/HardWind/LogoHardwind.png" alt="Kyklon-mark-png">
                         </div>
                     </div>
 
                     <div data-aos="flip-left" data-aos-delay="1200" data-aos-duration="1000">
-                        <div class="EquipamentMark">
+                        <div class="EquipamentMark" value="Atacama">
                             <img class="MarkLogo" src="./images/Marcas/Atacama/LogoAtacama.png" alt="Kyklon-mark-png">
                         </div>
                     </div>
@@ -213,7 +333,7 @@
 
                 <div class="DivEquipament">
                     <div class="ContainerEquip" data-aos="flip-left" data-aos-delay="300" data-aos-duration="1000">
-                        <div class="SecadorBackground">
+                        <div class="SecadorBackground" name="EquipamentContainer" value="Secadores">
                             <img class="SecadorImages" src="./images/ExampleImages/Equipament1.png"
                                 alt="Example-Equipament-png">
                         </div>
@@ -223,7 +343,7 @@
                     </div>
 
                     <div class="ContainerEquip" data-aos="flip-left" data-aos-delay="500" data-aos-duration="1000">
-                        <div class="SecadorBackground">
+                        <div class="SecadorBackground" name="EquipamentContainer" value="Secadoras">
                             <img class="SecadorImages" src="./images/ExampleImages/Equipament2.png"
                                 alt="Example-Equipament-png">
                         </div>
@@ -239,7 +359,7 @@
 
                 <div class="DivEquipament">
                     <div class="ContainerEquip" data-aos="flip-left" data-aos-delay="200" data-aos-duration="1000">
-                        <div class="SopradorBackground">
+                        <div class="SopradorBackground" name="EquipamentContainer" value="Soprador1">
                             <img class="SopradorImages" src="./images/ExampleImages/Equipament3.png"
                                 alt="Example-Equipament-png">
                         </div>
@@ -249,7 +369,7 @@
                     </div>
 
                     <div class="ContainerEquip" data-aos="flip-left" data-aos-delay="400" data-aos-duration="1000">
-                        <div class="SopradorBackground">
+                        <div class="SopradorBackground" name="EquipamentContainer" value="Soprador2">
                             <img class="SopradorImages" src="./images/ExampleImages/Equipament4.png"
                                 alt="Example-Equipament-png">
                         </div>
@@ -258,7 +378,7 @@
                     </div>
 
                     <div class="ContainerEquip" data-aos="flip-left" data-aos-delay="600" data-aos-duration="1000">
-                        <div class="SopradorBackground">
+                        <div class="SopradorBackground" name="EquipamentContainer" value="Soprador3">
                             <img class="SopradorImages" src="./images/ExampleImages/Equipament5.png"
                                 alt="Example-Equipament-png">
                         </div>
@@ -271,11 +391,168 @@
 
         </section>
 
+        <section class="Section7">
+
+            <div class="OpenFilter " id="FilterBox" onclick="OpenFilter()">
+                <i class='bx bx-search-alt-2 bx-tada Search'></i>
+            </div>
+
+            <aside class="BoxFilter">
+                <p class="CloseBoxFilter" onclick="CloseFilter()">X</p>
+                <h2 class="TitleFilter">Encontre <b>O Equipamento</b> Atende Melhor Suas Expectativas</h2>
+
+                <div class="FiltersDiv">
+                    <div class="DivSelect">
+                        <label class="TitleLabel" for="Ruido">Nível de Ruido:</label>
+
+                        <select class="SelectFilter" name="Ruido" id="Ruido">
+                            <option class="OptionSelect" id="optionRuido" value="Silencioso">mais silencioso, 60, 70, 76
+                                db</option>
+                            <option class="OptionSelect" id="optionRuido" value="Barulhento">mais barulhento, 75, 78, 80
+                                db</option>
+                        </select>
+                    </div>
+
+                    <div class="DivSelect">
+                        <label class="TitleLabel" for="Peso">Peso (kg):</label>
+
+                        <select class="SelectFilter" name="Peso" id="Peso">
+                            <option class="OptionSelect" id="option3" value="MaisLeve">mais leve, 4,0 - 5,0 kg</option>
+                            <option class="OptionSelect" id="option4" value="MaisPesado">mais pesado, 5,0 - 6,0 kg
+                            </option>
+                        </select>
+                    </div>
+
+                    <div class="DivSelect">
+                        <label class="TitleLabel" for="Potencia">Potencia (watts):</label>
+
+                        <select class="SelectFilter" name="Potencia" id="Potencia">
+                            <option class="OptionSelect" id="option5" value="MaisPotencia">mais potència, 2.200 3.000
+                                6.000 W</option>
+                            <option class="OptionSelect" id="option6" value="MenosPotencia">menos potència, 1.800 2.800
+                                5.500 W</option>
+                        </select>
+                    </div>
+
+                    <div class="DivSelect">
+                        <label class="TitleLabel" for="Material">Material:</label>
+
+                        <select class="SelectFilter" name="Material" id="Material">
+                            <option class="OptionSelect" id="option7" value="PlasticoResistente">Plásticos resistentes,
+                                mais leves</option>
+                            <option class="OptionSelect" id="option8" value="AçoInoxidavel">Aço inoxidavel, mais pesados
+                            </option>
+                        </select>
+                    </div>
+                </div>
+
+                <button class="ButtonFilter" onclick="ConfirmFilter()">Filtrar Pesquisa</button>
+            </aside>
+
+            <div class="BlurSec7">
+                <div class="MachinesFilter">
+                    <div class="FilterDiv1">
+                        <div class="FilterArrow">
+                            <button class="ButtonArrow">
+                                <i class='bx bx-chevron-left IconArrow'></i>
+                            </button>
+                            <button class="ButtonArrow">
+                                <i class='bx bx-chevron-right IconArrow'></i>
+                            </button>
+                        </div>
+                        <img class="ImageFilter" src="./images/Marcas/Kyklon/SecadorKyklon.png"
+                            alt="Product-Machine-Example-png">
+
+                        <div class="TextsFilterPrice">
+                            <p class="FilterPrice1">Preço Estimado</p>
+
+                            <div class="DivPriceFilter">
+                                <p class="FilterPrice2">R$ 1.500,00 a R$ 2.000,00</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="DivFilterInfo">
+                        <p class="ButtonCloseFilter" onclick="CloseFilterSelect()">X</p>
+
+                        <img class="LogoMachineMark" src="./images/Marcas/Kyklon/LogoKyklon.png" alt="Logo-Machine-png">
+
+                        <div class="InformationsTexts">
+                            <div class="TextInformation">
+                                <img class="IconInformation" src="./images/Icons/IconPower.png"
+                                    alt="Icon-Especific-png">
+
+                                <p class="FilterInformation"><b class="Btext">Potência:</b> 2.800 watts</p>
+                            </div>
+
+                            <div class="TextInformation">
+                                <img class="IconInformation" src="./images/Icons/IconWeight.png"
+                                    alt="Icon-Especific-png">
+
+                                <p class="FilterInformation"><b class="Btext">Peso:</b> 4.5 kg</p>
+                            </div>
+
+                            <div class="TextInformation">
+                                <img class="IconInformation" src="./images/Icons/IconSound.png"
+                                    alt="Icon-Especific-png">
+
+                                <p class="FilterInformation"><b class="Btext">Nivel de ruido:</b> 2.800 watts</p>
+                            </div>
+
+                            <div class="TextInformation">
+                                <img class="IconInformation" src="./images/Icons/IconTemp.png" alt="Icon-Especific-png">
+
+                                <p class="FilterInformation"><b class="Btext">Ajuste de Temperatura:</b> Sim (2 níveis)
+                                </p>
+                            </div>
+
+                            <div class="TextInformation">
+                                <img class="IconInformation" src="./images/Icons/IconSpeed.png"
+                                    alt="Icon-Especific-png">
+
+                                <p class="FilterInformation"><b class="Btext">Ajuste de Velocidade:</b> Sim (2
+                                    velocidades)s</p>
+                            </div>
+                        </div>
+
+                        <p class="FilterDifferent"><b class="Btext">Diferenciais:</b> Alta durabilidade e eficiência
+                            energética; Design
+                            ergonômico para uso prolongado; Reconhecido pela robustez</p>
+                    </div>
+                </div>
+            </div>
+
+            <header class="HeaderSec7">
+                <div class="TextsHeader7">
+                    <h2 class="TitleH7">Simplifique a Escolha do seu Equipamento</h2>
+
+                    <h3 class="DescTitleH7">Compare diferentes modelos e encontre rapidamente o equipamento que se
+                        encaixa perfeitamente nas suas necessidades</h3>
+                </div>
+
+                <img class="LogoSec7" src="./images/ExampleImages/LogoEquipaments.png" alt="Logo-Example-Machines-png">
+            </header>
+
+            <main class="MainSec7">
+                <div class="BoxTitles7">
+                    <h3 class="TitleMain7">Potência e Eficiência:</h3>
+                    <h3 class="DescTitleMain7">Equipamento que Otimizam o Seu Trabalho</h3>
+                </div>
+
+                <ul class="EquipamentsList">
+
+                </ul>
+            </main>
+
+        </section>
+
     </main>
 
     <script src="./scriptAOS.js" async></script>
 </body>
 
 <script src="./scripts.js" async></script>
+<script src="./scriptsEquip.js" async></script>
+
 
 </html>

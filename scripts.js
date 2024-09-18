@@ -116,7 +116,7 @@ function stopChangeImages() {
 /* ALTERAR INFORMAÇÕES */
 
 function changeProduct1(imgsrc) {
-    
+
 
     const BladeImageS = document.querySelector('#imgsrc1')
     BladeImageS.src = imgsrc.src
@@ -207,12 +207,12 @@ function changeProduct1(imgsrc) {
         image2.forEach(imagem => {
             imagem.src = "./images/Laminas&Tesouras/Oster/OLM5.png";
 
-        image3.forEach(imagem => {
-            imagem.src = "./images/Laminas&Tesouras/Precision/PLM5.png";
-        })
-        image4.forEach(imagem => {
-            imagem.src = "./images/Laminas&Tesouras/Propetz/PTLM5F.png";
-        })
+            image3.forEach(imagem => {
+                imagem.src = "./images/Laminas&Tesouras/Precision/PLM5.png";
+            })
+            image4.forEach(imagem => {
+                imagem.src = "./images/Laminas&Tesouras/Propetz/PTLM5F.png";
+            })
         })
         image5.forEach(imagem => {
             imagem.src = "./images/Laminas&Tesouras/Wahl/WLM5.png";
@@ -312,7 +312,7 @@ function changeProduct1(imgsrc) {
     }
 }
 function changeProduct2(imgsrc) {
-    
+
     const BladeImageS = document.querySelector('#imgsrc2')
     BladeImageS.src = imgsrc.src
 
@@ -905,7 +905,7 @@ function changeProduct3(imgsrc) {
     }
 }
 function changeProduct4(imgsrc) {
-    
+
     const BladeImageS = document.querySelector('#imgsrc4')
     BladeImageS.src = imgsrc.src
 
@@ -1157,7 +1157,7 @@ function changeProduct4(imgsrc) {
     }
 }
 function changeProduct5(imgsrc) {
-    
+
     const BladeImageS = document.querySelector('#imgsrc5')
     BladeImageS.src = imgsrc.src
 
@@ -1420,7 +1420,7 @@ async function CloseSelection(event) {
 
     await new Promise(resolve => setTimeout(resolve, 300))
     Blur.style.opacity = '0'
-    await new Promise(resolve => setTimeout(resolve, 700))
+    await new Promise(resolve => setTimeout(resolve, 400))
     Blur.style.display = 'none'
 }
 
@@ -1443,7 +1443,7 @@ async function OpenSele(event) {
     const bladeId = checkID(event)
     if (bladeId === 'Acabamento') {
         console.log("Acabamento")
-        
+
         image1.forEach(imagem => {
             imagem.src = "./images/Laminas&Tesouras/Andis/LM10.png";
         })
@@ -1502,7 +1502,7 @@ async function OpenSele(event) {
         })
         image5.forEach(imagem => {
             imagem.src = "./images/Laminas&Tesouras/Andis/LM5fc.png";
-        })    
+        })
 
         await new Promise(resolve => setTimeout(resolve, 200))
         SeleBlade3.style.bottom = '0px'
@@ -1524,7 +1524,7 @@ async function OpenSele(event) {
         })
         image5.forEach(imagem => {
             imagem.src = "./images/Laminas&Tesouras/Andis/LM10.png";
-        })    
+        })
 
         await new Promise(resolve => setTimeout(resolve, 200))
         SeleBlade4.style.bottom = '0px'
@@ -1547,14 +1547,10 @@ async function OpenSele(event) {
         image5.forEach(imagem => {
             imagem.src = "./images/Laminas&Tesouras/Propetz/PTLM3F.png";
         })
-    
+
         await new Promise(resolve => setTimeout(resolve, 200))
         SeleBlade5.style.bottom = '0px'
 
     }
 
 }
-
-
-
-

@@ -1335,6 +1335,225 @@ b {
 
 /*SECTION5*/
 
+.BlurSec5 {
+    background-color: #00000061;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: none;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.5s;
+    z-index: 5;
+}
+
+
+
+.TabSelection {
+    background-color: #373737;
+    height: 600px;
+    border-radius: 15px;
+    position: relative;
+    padding: 30px;
+    width: 45px;
+    overflow-y: hidden;
+    bottom: -700px;
+    display: flex;
+    align-items: baseline;
+}
+
+.BackArrow {
+    display: none;
+    font-size: 40px;
+    position: absolute;
+    color: white;
+    top: 15px;
+    left: 15px;
+}
+
+.ArrowMC {
+    z-index: 3;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.ArrowMC:hover {
+    text-shadow: 0 0 15px white;
+}
+
+.CloseTabSelection {
+    color: white;
+    position: absolute;
+    right: 15px;
+    top: 12px;
+    font-size: 25px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.CloseTabSelection:hover {
+    text-shadow: 0 0 15px white;
+}
+
+
+
+.MCSelected {
+    display: none;
+    gap: 8px;
+    position: absolute;
+    align-items: center;
+    opacity: 0;
+}
+
+.MCDiv1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.MachineSelected {
+    max-width: 45%;
+}
+
+.MachineTosaModel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.MCModel {
+    color: white;
+    font-weight: 900;
+    font-size: 22px;
+}
+
+.MCDivPrice {
+    background-color: black;
+    padding: 5px;
+}
+
+.MCPrice {
+    color: #88ff7d;
+    font-size: 15px;
+}
+
+.MCDiv2 {
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+}
+
+.MarkMachineTosa {}
+
+.textsTosaMachine {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.TosaButtons {
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+    margin-bottom: 25px;
+}
+
+.BuyMC {
+    padding: 5px;
+    width: 175px;
+    border-radius: 8px;
+    background-color: #1f1f1f;
+    cursor: pointer;
+    transition: ease 0.5s;
+    display: flex;
+    justify-content: center;
+}
+
+.BuyMC:hover {
+    transform: translateY(-8px);
+    box-shadow: rgb(139, 139, 139) 0px 0px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.IconLinkM {
+    max-width: 30%;
+    filter: invert(1);
+}
+
+.IconLinkW {
+    max-width: 23%;
+    filter: invert(1);
+}
+
+.InfoTosaMachine {
+    color: white;
+    font-size: 18px;
+}
+
+
+
+
+
+.ListTosaMachines {
+    display: none;
+    padding: 35px 0;
+    flex-wrap: wrap;
+    gap: 25px;
+    position: absolute;
+    left: 65px;
+}
+
+.TosaMachine {
+    display: flex;
+    flex-direction: column;
+    width: 153px;
+    align-items: center;
+    border: solid 1px;
+    border-radius: 8px;
+    padding: 8px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.TosaMachine:hover {
+    transform: translateY(-15px);
+    box-shadow: rgb(139, 139, 139) 0px 0px 37px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.MaquinaImage {
+    max-width: 40%;
+}
+
+.TosaTexts {}
+
+.TosaMark {
+    color: white;
+    font-weight: 400;
+    margin-bottom: 8px;
+}
+
+.TosaMachineName {
+    font-weight: 700;
+    color: rgb(255 238 127);
+    font-size: 14px;
+    margin-bottom: 3px;
+}
+
+.DivPriceMachineTosa {
+    background-color: black;
+    padding: 4px;
+    width: 100%;
+}
+
+.TosaMachinePrice {
+    color: #88ff7d;
+    font-size: 11px;
+}
+
+
+
 .Section5 {
     display: flex;
     flex-direction: column;
@@ -1728,6 +1947,7 @@ b {
     gap: 5px;
     cursor: pointer;
     transition: ease 0.5s;
+    border-radius: 15px;
 }
 
 .FindEquipament:hover {
@@ -1977,6 +2197,640 @@ b {
     font-size: 18px;
     width: 300px;
 }
+
+/* BOX FILTER */
+
+.visible {
+    opacity: 2;
+}
+
+.hidden {
+    opacity: 0;
+}
+
+.OpenFilter {
+    background-color: black;
+    border-radius: 50px;
+    padding: 12px;
+    position: fixed;
+    right: 40px;
+    bottom: -200px;
+    cursor: pointer;
+    z-index: 2;
+    transition: ease 0.8s;
+
+}
+
+.OpenFilter:hover {
+    box-shadow: rgba(255, 255, 255, 0.56) 0px 0px 20px 4px;
+
+}
+
+.Search {
+    color: white;
+    text-align: center;
+    font-size: 45px;
+}
+
+.BoxFilter {
+    display: flex;
+    flex-direction: column;
+    background-color: #121212;
+    border-radius: 12px;
+    padding: 45px 35px;
+    width: 460px;
+    align-items: center;
+    position: fixed;
+    z-index: 3;
+    top: 140px;
+    right: -500px;
+    opacity: 2;
+    box-shadow: rgb(0 0 0 / 50%) 0px 0px 30px 4px;
+    transition: ease 0.8s;
+}
+
+.CloseBoxFilter {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 20px;
+    top: 15px;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+.TitleFilter {
+    color: white;
+    font-size: 30px;
+}
+
+
+.FiltersDiv {
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+    margin-top: 45px;
+}
+
+.DivSelect {
+    display: flex;
+    gap: 9px;
+}
+
+.TitleLabel {
+    color: #838383;
+}
+
+.SelectFilter {
+    background-color: #2a2a2a;
+    color: #a1a1a1;
+    appearance: none;
+    padding: 4px 11px;
+}
+
+.ButtonFilter {
+    background-color: #ffe400;
+    border-radius: 8px;
+    width: 200px;
+    height: 35px;
+    color: #000000;
+    font-weight: bold;
+    margin-top: 60px;
+    font-size: 20px;
+    cursor: pointer;
+    transition: ease 0.5s;
+}
+
+.ButtonFilter:hover {
+    transform: translateY(-8px);
+    box-shadow: rgba(255, 230, 0, 0.56) 0px 0px 20px 2px;
+
+}
+
+/* BoxMaquinas */
+
+.Blur2Sec6 {
+    background-color: #00000061;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: none;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.5s;
+    z-index: 5;
+}
+
+.CloseMarkDiv {
+    font-weight: 500;
+    font-size: 20px;
+    position: absolute;
+    text-align: center;
+    right: 15px;
+    top: 8px;
+    cursor: pointer;
+}
+
+.MarksInfo {
+    width: 48%;
+    background-color: white;
+    border-radius: 15px;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    position: relative;
+    bottom: -800px;
+}
+
+.InforPart1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.LogoMarkMC {
+    filter: brightness(0);
+    width: 50%;
+}
+
+.TextInfoMC1 {
+    font-weight: 500;
+    font-size: 18px;
+    text-align: center;
+    margin-top: 20px;
+    width: 78%;
+}
+
+.InforPart2 {
+    display: flex;
+    align-items: center;
+    margin-top: 25px;
+}
+
+.textStructure {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.IconInfo {
+    max-width: 20%;
+}
+
+.TextInfoMC2 {
+    text-align: center;
+    font-weight: 900;
+    width: 60%;
+}
+
+.MCExample {
+    border-radius: 15px;
+    max-width: 50%;
+}
+
+.DivIconsInfo3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 35%;
+}
+
+.InforPart3 {
+    display: flex;
+    margin-top: 30px;
+}
+
+.IconInfoMC {
+    max-width: 30%;
+}
+
+
+
+
+.BlurSec6 {
+    background-color: #00000061;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: none;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.5s;
+    z-index: 5;
+}
+
+.MachinesSelect {
+    display: flex;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    padding: 25px;
+    width: 950px;
+    height: 520px;
+    align-items: center;
+    position: relative;
+    bottom: -700px;
+    background: radial-gradient(circle, rgb(255 255 255) 0%, rgb(227 227 227) 80%);
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 0px 70px 4px;
+
+}
+
+.SelectDiv1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 44%;
+    position: relative;
+}
+
+.SelectArrow {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 85%;
+    top: 150px;
+}
+
+.NextSelect {
+    background: transparent;
+    cursor: pointer;
+}
+
+.IconNextArrow {
+    font-size: 90px;
+    color: rgb(0, 0, 0);
+    transition: ease 0.3s;
+}
+
+.IconArrow:hover {
+    text-shadow: 0 0 15px white;
+}
+
+.ButtonCloseSelect {
+    color: rgb(0, 0, 0);
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 25px;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+.ButtonCloseSelect:hover {
+    text-shadow: 0 0 15px white;
+}
+
+.ImageSelect {
+    max-width: 50%;
+    margin-right: 55px;
+}
+
+.TextsSelectPrice {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.SelectPrice1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: rgb(0, 0, 0);
+}
+
+.DivPriceSelect {
+    background-color: black;
+    padding: 5px;
+}
+
+.SelectPrice2 {
+    text-align: center;
+    color: #88ff7d;
+}
+
+.DivSelectInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    width: 50%;
+}
+
+.LogoMachineSelect {
+    filter: brightness(0);
+    max-width: 60%;
+}
+
+.InformationsTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.SelectBtext {
+    color: rgb(0, 0, 0);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.TextSelectInfo {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.IconSelectInfo {
+    max-width: 6%;
+    margin-right: 20px;
+    filter: invert(0);
+}
+
+.SelectInformation {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+.SelectDifferent {
+    font-size: 18px;
+    font-weight: 500;
+    color: rgb(0, 0, 0);
+}
+
+
+
+.BlurSec7 {
+    background-color: #00000061;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+    display: none;
+    opacity: 0;
+    align-items: center;
+    justify-content: center;
+    transition: ease 0.5s;
+    z-index: 5;
+}
+
+.MachinesFilter {
+    display: flex;
+    background-color: #1f1f1f;
+    border-radius: 15px;
+    padding: 25px;
+    width: 950px;
+    height: 520px;
+    align-items: center;
+    position: relative;
+    bottom: -800px;
+    background: radial-gradient(circle, rgb(27 27 27) 0%, rgb(23 23 23) 80%);
+    z-index: 5;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 0px 70px 4px;
+
+}
+
+.FilterDiv1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 44%;
+    position: relative;
+}
+
+.FilterArrow {
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    width: 85%;
+    top: 150px;
+}
+
+.ButtonArrow {
+    background: transparent;
+    cursor: pointer;
+}
+
+.IconArrow {
+    font-size: 90px;
+    color: white;
+    transition: ease 0.3s;
+}
+
+.IconArrow:hover {
+    text-shadow: 0 0 15px white;
+}
+
+.ButtonCloseFilter {
+    color: white;
+    position: absolute;
+    right: 25px;
+    top: 25px;
+    font-size: 25px;
+    transition: ease 0.3s;
+    cursor: pointer;
+}
+
+.ButtonCloseFilter:hover {
+    text-shadow: 0 0 15px white;
+}
+
+.ImageFilter {
+    max-width: 50%;
+    margin-right: 55px;
+}
+
+.TextsFilterPrice {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 30px;
+}
+
+.FilterPrice1 {
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: #ffffff;
+}
+
+.DivPriceFilter {
+    background-color: black;
+    padding: 5px;
+}
+
+.FilterPrice2 {
+    text-align: center;
+    color: #88ff7d;
+}
+
+.DivFilterInfo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 35px;
+    width: 50%;
+}
+
+.LogoMachineMark {
+    filter: brightness(10);
+    max-width: 60%;
+}
+
+.InformationsTexts {
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.Btext {
+    color: rgb(255, 255, 255);
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.TextInformation {
+    display: flex;
+    gap: 8px;
+    align-items: center;
+}
+
+.IconInformation {
+    max-width: 6%;
+    margin-right: 20px;
+    filter: invert(1);
+}
+
+.FilterInformation {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+.FilterDifferent {
+    font-size: 18px;
+    font-weight: 500;
+    color: white;
+}
+
+/* SECTION 7 */
+
+.Section7 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #222222;
+    padding: 70px 0;
+}
+
+.HeaderSec7 {
+    display: flex;
+    width: 70%;
+    margin-bottom: 140px;
+    align-items: center;
+    justify-content: center;
+}
+
+.TextsHeader7 {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    gap: 35px;
+}
+
+.TitleH7 {
+    color: #ffd600;
+    font-size: 38px;
+}
+
+.DescTitleH7 {
+    color: white;
+    font-size: 23px;
+}
+
+.LogoSec7 {
+    background: radial-gradient(circle, rgb(66 66 66) 0%, rgb(34 34 34) 70%);
+    border-radius: 500px;
+    max-width: 40%;
+}
+
+
+.MainSec7 {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+.BoxTitles7 {
+    margin-bottom: 50px;
+    width: 30%;
+}
+
+.TitleMain7 {
+    color: #ffd600;
+    text-align: center;
+    font-size: 35px;
+}
+
+.DescTitleMain7 {
+    color: white;
+    text-align: center;
+    font-size: 30px;
+}
+
+
+.EquipamentsList {
+    display: flex;
+    flex-wrap: wrap;
+    background-color: #2a2a2a;
+    justify-content: center;
+    padding: 50px 180px;
+    gap: 40px;
+    width: 100%;
+}
+
+.MachineProduct {
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    padding: 22px;
+    align-items: center;
+    width: 270px;
+    gap: 25px;
+    background: radial-gradient(circle, rgba(50, 50, 50, 1) 0%, rgb(24 24 24) 60%);
+    cursor: pointer;
+    position: relative;
+}
+
+.MachineImage {
+    max-width: 65%;
+    margin-bottom: 60px;
+}
+
+.TextsMachinePD {
+    position: absolute;
+    bottom: 20px;
+    left: 30px;
+}
+
+.MarkMachine {
+    color: #ffe200;
+}
+
+.NameMachine {
+    color: white;
+}
+
 
 @media screen and (max-width: 900px) {
     .General {
@@ -2455,7 +3309,7 @@ b {
         margin-top: 52px;
     }
 
-
+    /* Section 5 */
 
     .Section5 {
         padding-bottom: 100px;
@@ -2575,8 +3429,56 @@ b {
         font-size: 17px;
     }
 
+    .TabSelection {
+        justify-content: center;
+        align-items: baseline;
+    }
+
+    .MachineSelected {
+        max-width: 30%;
+    }
+
+    .MCSelected {
+        flex-direction: column;
+    }
+
+    .MachineTosaModel {
+        margin-bottom: 20px;
+    }
+
+    .MCDiv2 {
+        width: 90%;
+    }
+
+    .textsTosaMachine {
+        margin-bottom: 20px;
+    }
 
 
+
+    .MachinesSelect {
+        width: 90%;
+        flex-direction: column;
+        overflow-y: scroll;
+    }
+
+    .SelectDiv1 {
+        width: 100%;
+    }
+
+    .SelectArrow {
+        width: 100%;
+    }
+
+    .ImageSelect {
+        width: 100%;
+    }
+
+    .DivSelectInfo {
+        width: 100%;
+    }
+
+    /* Section6 */
 
     .DivHeaderSec6 {
         display: flex;
@@ -2681,7 +3583,7 @@ b {
         gap: 40px;
         align-items: center;
         justify-content: center;
-        margin-top: 900px;
+        margin-top: 1100px;
     }
 
     .Sec6Marks {
@@ -2690,6 +3592,130 @@ b {
 
     .DivEquipament {
         justify-content: center;
+    }
+
+    .MarksInfo {
+        width: 90%;
+        overflow-y: scroll;
+        height: 80%;
+    }
+
+    .LogoMarkMC {
+        width: 80%;
+        margin-top: 20px;
+    }
+
+    .TextInfoMC1 {
+        width: 100%;
+        font-weight: 500;
+        margin-top: 45px;
+    }
+
+    .InforPart2 {
+        justify-content: center;
+        gap: 25px;
+        margin-top: 50px;
+        flex-direction: column-reverse;
+    }
+
+    .TextInfoMC2 {
+        width: 100%;
+    }
+
+    .MCExample {
+        max-width: 100%;
+    }
+
+    .InforPart3 {
+        justify-content: center;
+        gap: 30px;
+        flex-wrap: wrap;
+        margin-top: 50px;
+    }
+
+    .DivIconsInfo3 {
+        width: 60%;
+        gap: 15px;
+    }
+
+    .IconInfoMC{
+        max-width: 40%;
+    }
+
+    /*SECTION 7*/
+
+    .HeaderSec7 {
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .TextsHeader7 {
+        width: 100%;
+    }
+
+    .TitleH7 {
+        text-align: center;
+    }
+
+    .DescTitleH7 {
+        text-align: center;
+    }
+
+    .LogoSec7 {
+        max-width: 70%;
+        margin-top: 80px;
+    }
+
+    .BoxTitles7 {
+        width: 90%;
+    }
+
+    .EquipamentsList {
+        padding: 50px;
+    }
+
+
+
+    .BoxFilter {
+        width: 90%;
+    }
+
+    .TitleFilter {
+        text-align: center;
+        font-size: 25px;
+    }
+
+
+
+    .MachinesFilter {
+        height: 80%;
+        width: 90%;
+        flex-direction: column;
+    }
+
+    .ImageFilter {
+        margin-right: 15px;
+    }
+
+    .FilterArrow {
+        width: 100%;
+        top: 100px;
+    }
+
+    .FilterDiv1 {
+        width: 100%;
+    }
+
+
+
+    .DivFilterInfo {
+        width: 100%;
+        overflow-y: scroll;
+        margin-top: 20px;
+    }
+
+    .FilterDifferent {
+        text-align: center;
     }
 
 }
