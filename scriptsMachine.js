@@ -11,6 +11,7 @@ const BackArrow = document.querySelector('.BackArrow')
 
 const ProductsMachine = [
     {
+        Tipo: 'Profissional',
         Marca: 'Andis',
         src: './images/ExampleImages/MachineExample2.png',
         Modelo: 'AGC2 Super 2-Speed',
@@ -21,6 +22,7 @@ const ProductsMachine = [
         Velociade: '',
     },
     {
+        Tipo: 'Profissional',
         Marca: 'Andis',
         src: './images/ExampleImages/MachineExample2.png',
         Modelo: 'AGC2 Super 2-Speed',
@@ -31,6 +33,7 @@ const ProductsMachine = [
         Velociade: '',
     },
     {
+        Tipo: 'Profissional',
         Marca: 'Andis',
         src: './images/ExampleImages/MachineExample2.png',
         Modelo: 'AGC2 Super 2-Speed',
@@ -41,6 +44,7 @@ const ProductsMachine = [
         Velociade: '',
     },
     {
+        Tipo: 'Profissional',
         Marca: 'Andis',
         src: './images/ExampleImages/MachineExample2.png',
         Modelo: 'AGC2 Super 2-Speed',
@@ -51,6 +55,7 @@ const ProductsMachine = [
         Velociade: '',
     },
     {
+        Tipo: 'Profissional',
         Marca: 'Andis',
         src: './images/ExampleImages/MachineExample2.png',
         Modelo: 'AGC2 Super 2-Speed',
@@ -61,6 +66,7 @@ const ProductsMachine = [
         Velociade: '',
     },
     {
+        Tipo: 'Profissional',
         Marca: 'Andis',
         src: './images/ExampleImages/MachineExample2.png',
         Modelo: 'AGC2 Super 2-Speed',
@@ -71,6 +77,7 @@ const ProductsMachine = [
         Velociade: '',
     },
     {
+        Tipo: 'Profissional',
         Marca: 'Andis',
         src: './images/ExampleImages/MachineExample2.png',
         Modelo: 'AGC2 Super 2-Speed',
@@ -81,6 +88,7 @@ const ProductsMachine = [
         Velociade: '',
     },
     {
+        Tipo: 'Profissional',
         Marca: 'Andis',
         src: './images/ExampleImages/MachineExample2.png',
         Modelo: 'AGC2 Super 2-Speed',
@@ -91,6 +99,7 @@ const ProductsMachine = [
         Velociade: '',
     },
     {
+        Tipo: 'Profissional',
         Marca: 'Andis',
         src: './images/ExampleImages/MachineExample2.png',
         Modelo: 'AGC2 Super 2-Speed',
@@ -101,6 +110,7 @@ const ProductsMachine = [
         Velociade: '',
     },
     {
+        Tipo: 'Profissional',
         Marca: 'Andis',
         src: './images/ExampleImages/MachineExample2.png',
         Modelo: 'AGC2 Super 2-Speed',
@@ -111,6 +121,7 @@ const ProductsMachine = [
         Velociade: '',
     },
     {
+        Tipo: 'Profissional',
         Marca: 'Andis',
         src: './images/ExampleImages/MachineExample2.png',
         Modelo: 'AGC2 Super 2-Speed',
@@ -121,6 +132,7 @@ const ProductsMachine = [
         Velociade: '',
     },
     {
+        Tipo: 'Profissional',
         Marca: 'Andis',
         src: './images/ExampleImages/MachineExample2.png',
         Modelo: 'AGC2 Super 2-Speed',
@@ -267,6 +279,7 @@ async function ShowMachine() {
     await new Promise(resolve => setTimeout(resolve, 300))
     ListMachines.style.display = 'none'
     MCSelected.style.display = 'flex'
+    ProductsTabel.style.overflowY = "hidden"
     await new Promise(resolve => setTimeout(resolve, 400))
     ProductsTabel.style.height = '500px'
     MCSelected.style.opacity = '2'
@@ -280,6 +293,7 @@ async function BackListMachine() {
     BackArrow.style.display = 'none'
     MCSelected.style.display = 'none'
     ListMachines.style.display = 'flex'
+    ProductsTabel.style.overflowY = "scroll"
     await new Promise(resolve => setTimeout(resolve, 400))
     ListMachines.style.opacity = '2'
     ProductsTabel.style.height = '600px'

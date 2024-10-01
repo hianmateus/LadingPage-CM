@@ -63,753 +63,58 @@
             </div>
         </header>
 
-        <div class="Blur">
-            <div class="Selection1" id="Acabamento">
-                <p class="CloseButton" onclick="CloseSelection()">X</p>
+        <div class="BlurLaminas">
 
-                <div class="BladeSInfo">
-                    <div class="ContainerBlades">
-                        <div class="BladeSelected">
-                            <img class="BladeImageS fadeIMG1" id="imgsrc1" loading="lazy"
-                                src="./images/Laminas&Tesouras/Andis/LM10.png" alt="Image-Blade-png">
+            <div class="BladesTabel">
 
-                            <img class="BladeImageS fadeIMG2" id="imgsrc1" loading="lazy"
-                                src="./images/Laminas&Tesouras/Oster/OLM10.png" alt="Image-Blade-png">
+                <p class="CloseSL" onclick="hiddenBlades()">X</p>
 
-                            <img class="BladeImageS fadeIMG3" id="imgsrc1" loading="lazy"
-                                src="./images/Laminas&Tesouras/Precision/PLM10.png" alt="Image-Blade-png">
+                <div class="DivSelected">
+                    <div class="BladeSL1">
+                        <div class="ContainerBladeSL">
+                            <div class="divSLname">
+                                <p class="SLname">LÂMINA 10</p>
+                            </div>
 
-                            <img class="BladeImageS fadeIMG4" id="imgsrc1" loading="lazy"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM10.png" alt="Image-Blade-png">
+                            <div class="divSLprice">
+                                <p class="SLprice">R$ 230 - 280</p>
+                            </div>
 
-                            <img class="BladeImageS fadeIMG5" id="imgsrc1" loading="lazy"
-                                src="./images/Laminas&Tesouras/Wahl/WLM10.png" alt="Image-Blade-png">
+                            <img class="BladeimgSelected" src="./images/Laminas&Tesouras/Andis/LM10.png"
+                                alt="Blade-image-png">
                         </div>
 
-                        <div class="DivBladeNumber">
-                            <p class="BladeNumber" id="AcBladeName1">Lamina 10</p>
-                        </div>
-
-                        <div class="DivBladePrice">
-                            <p class="BladePrice" id="AcBladePrice1">R$ 230 - 280</p>
-                        </div>
-
-                        <div class="DivIconsShop">
-                            <a class="IconsShop" href="" target="_blank" id="LinkML1"> <img class="ShopImgIcon" loading="lazy"
-                                    src="./images/Icons/IconMercadoLivre.png" alt=""> </a>
-                            <a class="IconsShop" href="" target="_blank" id="LinkWA1"> <img class="ShopImgIcon" loading="lazy"
-                                    src="./images/Icons/IconWhatsapp.png" alt=""> </a>
+                        <div class="SLButtons">
+                            <div class="ButtonLink"> <img class="Linkimg" src="./images/Icons/IconMercadoLivre.png"
+                                    alt="">
+                            </div>
+                            <div class="ButtonLink"> <img class="Linkimg" src="./images/Icons/IconWhatsapp.png" alt="">
+                            </div>
                         </div>
                     </div>
 
-                    <div class="ContainerBladeInfo">
-                        <p class="BladeInformation" id="about1"><b class="bBlack">Uso Comum:</b> Usada para garantir um
-                            corte curto e
-                            higiênico nessas áreas sensíveis, ao redor das patas, evitando acúmulo de sujeira e detritos
-                            e ao redor do focinho e orelhas</p>
-                        <p class="BladeInformation" id="about2"><b class="bBlack">Altura do Corte:</b> corta o pêlo a
-                            uma altura
+                    <div class="BladeSL2">
+                        <p class="SLbladeinfo" id="info1"><b class="bBlack">Altura do Corte:</b> corta o pêlo a uma altura
                             aproximadamente 1,5 mm</p>
-                        <p class="BladeInformation" id="about3"><b class="bBlack">Compatibilidade:</b> Compativel com
-                            máquinas de
-                            tosa padrão, como as
-                            fabricadas pela Andis, Oster, Wahl, e outras marcas populares</p>
+
+                        <p class="SLbladeinfo" id="info2"><b class="bBlack">Uso Comum:</b> Usada para garantir um corte curto e
+                            higiênico nessas áreas sensíveis, ao redor
+                            das patas, evitando acúmulo de sujeira e detritos e ao redor do focinho e orelhas</p>
+
+                        <p class="SLbladeinfo" id="info3"><b class="bBlack">Compatibilidade:</b> Compativel com máquinas de tosa
+                            padrão, como as fabricadas pela Andis,
+                            Oster, Wahl, e outras marcas populares</p>
                     </div>
                 </div>
 
-                <div class="ContainerProductsBlade">
-                    <div class="DivProduct" id="Product1">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct1(this)" id="ACBlade1" loading="lazy"
-                                src="./images/Laminas&Tesouras/Andis/LM10.png" alt="Image-Blade-png">
-                        </div>
+                <div class="ListBlades">
 
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product2">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct1(this)" id="ACBlade2" loading="lazy"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM7F.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product3">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct1(this)" id="ACBlade3" loading="lazy"
-                                src="./images/Laminas&Tesouras/Wahl/WLM5.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product4">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct1(this)" id="ACBlade4" loading="lazy"
-                                src="./images/Laminas&Tesouras/Andis/LM4fc.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product5">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct1(this)" id="ACBlade5" loading="lazy"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM3F.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product6">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct1(this)" id="ACBlade6" loading="lazy"
-                                src="./images/Laminas&Tesouras/Precision/PLMA8S.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
+                    
 
                 </div>
+
             </div>
 
-            <div class="Selection1" id="Desbaste">
-                <p class="CloseButton" onclick="CloseSelection()">X</p>
-
-                <div class="BladeSInfo">
-                    <div class="ContainerBlades">
-                        <div class="BladeSelected">
-                            <img class="BladeImageS fadeIMG1" id="imgsrc2" loading="lazy"
-                                src="./images/Laminas&Tesouras/Andis/LM5fc.png" alt="Image-Blade-png">
- 
-                            <img class="BladeImageS fadeIMG2" id="imgsrc2" loading="lazy"
-                                src="./images/Laminas&Tesouras/Oster/OLM5.png" alt="Image-Blade-png">
-
-                            <img class="BladeImageS fadeIMG3" id="imgsrc2" loading="lazy"
-                                src="./images/Laminas&Tesouras/Precision/PLM5.png" alt="Image-Blade-png">
-
-                            <img class="BladeImageS fadeIMG4" id="imgsrc2" loading="lazy"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM5F.png" alt="Image-Blade-png">
-
-                            <img class="BladeImageS fadeIMG5" id="imgsrc2" src="./images/Laminas&Tesouras/Wahl/WLM5.png" loading="lazy"
-                                alt="Image-Blade-png">
-
-                        </div>
-
-                        <div class="DivBladeNumber">
-                            <p class="BladeNumber" id="AcBladeName2">Lamina 10</p>
-                        </div>
-
-                        <div class="DivBladePrice">
-                            <p class="BladePrice" id="AcBladePrice2">R$ 230 - 280</p>
-                        </div>
-
-                        <div class="DivIconsShop">
-                            <a class="IconsShop" href="" target="_blank" id="LinkML2"> <img class="ShopImgIcon" loading="lazy"
-                                    src="./images/Icons/IconMercadoLivre.png" alt=""> </a>
-                            <a class="IconsShop" href="" target="_blank" id="LinkWA2"> <img class="ShopImgIcon" loading="lazy"
-                                    src="./images/Icons/IconWhatsapp.png" alt=""> </a>
-                        </div>
-                    </div>
-
-                    <div class="ContainerBladeInfo">
-                        <p class="BladeInformation" id="about4"><b class="bBlack">Material:</b> Geralemente feita de aço
-                            inoxidável
-                            ou aço carbono para
-                            maior durabilidade e resistência à corrosão</p>
-                        <p class="BladeInformation" id="about5"><b class="bBlack">Altura do Corte:</b> corta o pêlo a
-                            uma altura
-                            aproximadamente 1,5 mm
-                            (1/6 de polegada)</p>
-                        <p class="BladeInformation" id="about6"><b class="bBlack">Compatibilidade:</b> Compativel com
-                            máquinas de
-                            tosa padrão, como as
-                            fabricadas pela Andis, Oster, Wahl, e outras marcas populares</p>
-                    </div>
-                </div>
-
-                <div class="ContainerProductsBlade">
-                    <div class="DivProduct" id="Product1">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct2(this)" id="DSBlade1" loading="lazy"
-                                src="./images/Laminas&Tesouras/Andis/LM5fc.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product2">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct2(this)" id="DSBlade2" loading="lazy"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM7F.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product3">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct2(this)" id="DSBlade3" loading="lazy"
-                                src="./images/Laminas&Tesouras/Wahl/WLM10.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product4">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct2(this)" id="DSBlade4" loading="lazy"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM15.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product5">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct2(this)" id="DSBlade5" loading="lazy"
-                                src="./images/Laminas&Tesouras/Andis/LM30.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product6">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct2(this)" id="DSBlade6" loading="lazy"
-                                src="./images/Laminas&Tesouras/Oster/OLM40.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product7">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct2(this)" id="DSBlade7" loading="lazy"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM50.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product8">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct2(this)" id="DSBlade8" loading="lazy"
-                                src="./images/Laminas&Tesouras/Wahl/WLMBravura.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product9">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct2(this)" id="DSBlade9" loading="lazy"
-                                src="./images/Laminas&Tesouras/Propetz/PRTLMPro6.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="Selection1" id="Ajuste">
-                <p class="CloseButton" onclick="CloseSelection()">X</p>
-
-                <div class="BladeSInfo">
-                    <div class="ContainerBlades">
-                        <div class="BladeSelected">
-                            <img class="BladeImageS fadeIMG1" id="imgsrc3" loading="lazy"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM10.png" alt="Image-Blade-png">
-
-                            <img class="BladeImageS fadeIMG2" id="imgsrc3" loading="lazy"
-                                src="./images/Laminas&Tesouras/Wahl/WLM10.png" alt="Image-Blade-png">
-
-                            <img class="BladeImageS fadeIMG3" id="imgsrc3" loading="lazy"
-                                src="./images/Laminas&Tesouras/Andis/LM10.png" alt="Image-Blade-png">
-
-                            <img class="BladeImageS fadeIMG4" id="imgsrc3" loading="lazy"
-                                src="./images/Laminas&Tesouras/Oster/OLM10.png" alt="Image-Blade-png">
-
-                            <img class="BladeImageS fadeIMG5" id="imgsrc3" loading="lazy"
-                                src="./images/Laminas&Tesouras/Wahl/WLM10.png" alt="Image-Blade-png">
-
-                        </div>
-
-                        <div class="DivBladeNumber">
-                            <p class="BladeNumber" id="AcBladeName3">Lamina 10</p>
-                        </div>
-
-                        <div class="DivBladePrice">
-                            <p class="BladePrice" id="AcBladePrice3">R$ 230 - 280</p>
-                        </div>
-
-                        <div class="DivIconsShop">
-                            <a class="IconsShop" href="" target="_blank" id="LinkML3"> <img class="ShopImgIcon" loading="lazy"
-                                    src="./images/Icons/IconMercadoLivre.png" alt=""> </a>
-                            <a class="IconsShop" href="" target="_blank" id="LinkWA3"> <img class="ShopImgIcon" loading="lazy"
-                                    src="./images/Icons/IconWhatsapp.png" alt=""> </a>
-                        </div>
-                    </div>
-
-                    <div class="ContainerBladeInfo">
-                        <p class="BladeInformation" id="about7"><b class="bBlack">Material:</b> Geralemente feita de aço
-                            inoxidável
-                            ou aço carbono para
-                            maior durabilidade e resistência à corrosão</p>
-                        <p class="BladeInformation" id="about8"><b class="bBlack">Altura do Corte:</b> corta o pêlo a
-                            uma altura
-                            aproximadamente 1,5 mm
-                            (1/6 de polegada)</p>
-                        <p class="BladeInformation" id="about9"><b class="bBlack">Compatibilidade:</b> Compativel com
-                            máquinas de
-                            tosa padrão, como as
-                            fabricadas pela Andis, Oster, Wahl, e outras marcas populares</p>
-                    </div>
-                </div>
-
-                <div class="ContainerProductsBlade">
-                    <div class="DivProduct" id="Product1">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct3(this)" id="AJBlade1" loading="lazy"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM10.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product2">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct3(this)" id="AJBlade2"
-                                src="./images/Laminas&Tesouras/Andis/LM15.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product3">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct3(this)" id="AJBlade3"
-                                src="./images/Laminas&Tesouras/Wahl/WLMBravura.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product4">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct3(this)" id="AJBlade4"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM40.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product5">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct3(this)" id="AJBlade5"
-                                src="./images/Laminas&Tesouras/Oster/OLM50.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product6">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct3(this)" id="AJBlade6"
-                                src="./images/Laminas&Tesouras/Oster/OLM78.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product7">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct3(this)" id="AJBlade7"
-                                src="./images/Laminas&Tesouras/Wahl/WLM7F.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product8">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct3(this)" id="AJBlade8"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM3F.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product9">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct3(this)" id="AJBlade9"
-                                src="./images/Laminas&Tesouras/Oster/OLM4f.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product10">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct3(this)" id="AJBlade10"
-                                src="./images/Laminas&Tesouras/Precision/PLM5.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
-
-            <div class="Selection1" id="AcabamentoHigienica">
-                <p class="CloseButton" onclick="CloseSelection()">X</p>
-
-                <div class="BladeSInfo">
-                    <div class="ContainerBlades">
-                        <div class="BladeSelected">
-                            <img class="BladeImageS fadeIMG1" id="imgsrc4" loading="lazy"
-                                src="./images/Laminas&Tesouras/Andis/LM10.png" alt="Image-Blade-png">
-
-                            <img class="BladeImageS fadeIMG2" id="imgsrc4" loading="lazy"
-                                src="./images/Laminas&Tesouras/Oster/OLM10.png" alt="Image-Blade-png">
-
-                            <img class="BladeImageS fadeIMG3" id="imgsrc4" loading="lazy"
-                                src="./images/Laminas&Tesouras/Precision/PLM10.png" alt="Image-Blade-png">
-
-                            <img class="BladeImageS fadeIMG4" id="imgsrc4" loading="lazy"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM10.png" alt="Image-Blade-png">
-
-                            <img class="BladeImageS fadeIMG5" id="imgsrc4" loading="lazy"
-                                src="./images/Laminas&Tesouras/Wahl/WLM10.png" alt="Image-Blade-png">
-
-                        </div>
-
-                        <div class="DivBladeNumber">
-                            <p class="BladeNumber" id="AcBladeName4">Lamina 10</p>
-                        </div>
-
-                        <div class="DivBladePrice">
-                            <p class="BladePrice" id="AcBladePrice4">R$ 230 - 280</p>
-                        </div>
-
-                        <div class="DivIconsShop">
-                            <a class="IconsShop" href="" target="_blank" id="LinkML4"> <img class="ShopImgIcon"
-                                    src="./images/Icons/IconMercadoLivre.png" alt=""> </a>
-                            <a class="IconsShop" href="" target="_blank" id="LinkWA4"> <img class="ShopImgIcon"
-                                    src="./images/Icons/IconWhatsapp.png" alt=""> </a>
-                        </div>
-                    </div>
-
-                    <div class="ContainerBladeInfo">
-                        <p class="BladeInformation" id="about10"><b class="bBlack">Material:</b> Geralemente feita de
-                            aço inoxidável
-                            ou aço carbono para
-                            maior durabilidade e resistência à corrosão</p>
-                        <p class="BladeInformation" id="about11"><b class="bBlack">Altura do Corte:</b> corta o pêlo a
-                            uma altura
-                            aproximadamente 1,5 mm
-                            (1/6 de polegada)</p>
-                        <p class="BladeInformation" id="about12"><b class="bBlack">Compatibilidade:</b> Compativel com
-                            máquinas de
-                            tosa padrão, como as
-                            fabricadas pela Andis, Oster, Wahl, e outras marcas populares</p>
-                    </div>
-                </div>
-
-                <div class="ContainerProductsBlade">
-                    <div class="DivProduct" id="Product1">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct4(this)" id="AHBlade1"
-                                src="./images/Laminas&Tesouras/Andis/LM10.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product2">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct4(this)" id="AHBlade2"
-                                src="./images/Laminas&Tesouras/Oster/OLM15.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product3">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct4(this)" id="AHBlade3"
-                                src="./images/Laminas&Tesouras/Precision/PLM7FC.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product4">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct4(this)" id="AHBlade4"
-                                src="./images/Laminas&Tesouras/Oster/OLM30.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product5">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct4(this)" id="AHBlade5"
-                                src="./images/Laminas&Tesouras/Wahl/WLM40.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product6">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct4(this)" id="AHBlade6"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM5F.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product7">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct4(this)" id="AHBlade7"
-                                src="./images/Laminas&Tesouras/Precision/PLM4FC.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product8">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct4(this)" id="AHBlade8"
-                                src="./images/Laminas&Tesouras/Propetz/PRTLM30.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                </div>
-            </div>
-
-            <div class="Selection1" id="DesbasteHigienica">
-                <p class="CloseButton" onclick="CloseSelection()">X</p>
-
-                <div class="BladeSInfo">
-                    <div class="ContainerBlades">
-                        <div class="BladeSelected">
-                            <img class="BladeImageS fadeIMG1" id="imgsrc5"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM3F.png" alt="Image-Blade-png">
-
-                            <img class="BladeImageS fadeIMG2" id="imgsrc5"
-                                src="./images/Laminas&Tesouras/Oster/OLM10.png" alt="Image-Blade-png">
-
-                            <img class="BladeImageS fadeIMG3" id="imgsrc5"
-                                src="./images/Laminas&Tesouras/Precision/PLM10.png" alt="Image-Blade-png">
-
-                            <img class="BladeImageS fadeIMG4" id="imgsrc5"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM10.png" alt="Image-Blade-png">
-
-                            <img class="BladeImageS fadeIMG5" id="imgsrc5"
-                                src="./images/Laminas&Tesouras/Wahl/WLM10.png" alt="Image-Blade-png">
-
-                        </div>
-
-                        <div class="DivBladeNumber">
-                            <p class="BladeNumber" id="AcBladeName5">Lamina 10</p>
-                        </div>
-
-                        <div class="DivBladePrice">
-                            <p class="BladePrice" id="AcBladePrice5">R$ 230 - 280</p>
-                        </div>
-
-                        <div class="DivIconsShop">
-                            <a class="IconsShop" href="" target="_blank" id="LinkML5"> <img class="ShopImgIcon"
-                                    src="./images/Icons/IconMercadoLivre.png" alt=""> </a>
-                            <a class="IconsShop" href="" target="_blank" id="LinkWA5"> <img class="ShopImgIcon"
-                                    src="./images/Icons/IconWhatsapp.png" alt=""> </a>
-                        </div>
-                    </div>
-
-                    <div class="ContainerBladeInfo">
-                        <p class="BladeInformation" id="about13"><b class="bBlack">Material:</b> Geralemente feita de
-                            aço inoxidável
-                            ou aço carbono para
-                            maior durabilidade e resistência à corrosão</p>
-                        <p class="BladeInformation" id="about14"><b class="bBlack">Altura do Corte:</b> corta o pêlo a
-                            uma altura
-                            aproximadamente 1,5 mm
-                            (1/6 de polegada)</p>
-                        <p class="BladeInformation" id="about15"><b class="bBlack">Compatibilidade:</b> Compativel com
-                            máquinas de
-                            tosa padrão, como as
-                            fabricadas pela Andis, Oster, Wahl, e outras marcas populares</p>
-                    </div>
-                </div>
-
-                <div class="ContainerProductsBlade">
-                    <div class="DivProduct" id="Product1">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct5(this)" id="DHBlade1"
-                                src="./images/Laminas&Tesouras/Propetz/PTLM3F.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product2">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct5(this)" id="DHBlade2"
-                                src="./images/Laminas&Tesouras/Andis/LM4fc.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product3">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct5(this)" id="DHBlade3"
-                                src="./images/Laminas&Tesouras/Wahl/WLM5.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product4">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct5(this)" id="DHBlade4"
-                                src="./images/Laminas&Tesouras/Andis/LM7fc.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product5">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct5(this)" id="DHBlade5"
-                                src="./images/Laminas&Tesouras/Oster/OLM10.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product6">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct5(this)" id="DHBlade6"
-                                src="./images/Laminas&Tesouras/Andis/LM5fc.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product7">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct5(this)" id="DHBlade7"
-                                src="./images/Laminas&Tesouras/Precision/PLM58.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-                    <div class="DivProduct" id="Product8">
-                        <div class="DivBladeP">
-                            <img class="BladeImageP" onclick="changeProduct5(this)" id="DHBlade8"
-                                src="./images/Laminas&Tesouras/Wahl/WLM34.png" alt="Image-Blade-png">
-                        </div>
-
-                        <div class="DivPrice">
-                            <p class="PriceBlade">R$ 230 - 279</p>
-                        </div>
-                    </div>
-
-
-                </div>
-            </div>
         </div>
 
         <section class="Section3">
@@ -957,7 +262,7 @@
             <main class="carousel">
 
                 <div data-aos="fade-right">
-                    <div class="bladeContainer" onclick="OpenSele(event)" id="Acabamento">
+                    <div class="bladeContainer" id="Acabamento">
 
                         <img class="Bladeimage" src="./images/iconLMGold.png" alt="Andis-Example-Image-png">
 
@@ -970,7 +275,7 @@
 
 
                 <div data-aos="fade-right" data-aos-delay="100">
-                    <div class="bladeContainer" onclick="OpenSele(event)" id="Desbaste">
+                    <div class="bladeContainer" id="Desbaste">
 
                         <img class="Bladeimage" src="./images/iconLMGold.png" alt="Andis-Example-Image-png">
 
@@ -983,7 +288,7 @@
 
 
                 <div data-aos="fade-right" data-aos-delay="300">
-                    <div class="bladeContainer" onclick="OpenSele(event)" id="Ajuste">
+                    <div class="bladeContainer" id="Ajuste">
 
                         <img class="Bladeimage" src="./images/iconLMGold.png" alt="Andis-Example-Image-png">
 
@@ -996,7 +301,7 @@
 
 
                 <div data-aos="fade-right" data-aos-delay="500">
-                    <div class="bladeContainer" onclick="OpenSele(event)" id="AcabamentoHigienica">
+                    <div class="bladeContainer" id="AcabamentoHigienica">
 
                         <img class="Bladeimage" src="./images/iconLMGold.png" alt="Andis-Example-Image-png">
 
@@ -1008,7 +313,7 @@
                 </div>
 
                 <div data-aos="fade-right" data-aos-delay="700">
-                    <div class="bladeContainer" onclick="OpenSele(event)" id="DesbasteHigienica">
+                    <div class="bladeContainer" id="DesbasteHigienica">
 
                         <img class="Bladeimage" src="./images/iconLMGold.png" alt="Andis-Example-Image-png">
 
@@ -1115,6 +420,6 @@
     <script src="./scriptAOS.js" async></script>
 </body>
 
-<script src="./scripts.js" async></script>
+<script src="./scriptsLM.js" async></script>
 
 </html>
