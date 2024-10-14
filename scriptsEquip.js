@@ -184,6 +184,11 @@ const Equipements = [
 const EquipImage = document.querySelector('.ImageSelect')
 const EquipLogo = document.querySelector('.LogoMachineSelect')
 */
+const Blur2Sec6 = document.querySelector('.Blur2Sec6')
+const MarksInfo = document.querySelector('.MarksInfo')
+const DivMarks = document.querySelectorAll('.EquipamentMark')
+const Marks = Array.from(DivMarks)
+
 const EquipPrice = document.querySelector('.SelectPrice2')
 const EquipPotencia = document.getElementById('Potencia')
 const EquipPeso = document.getElementById('Peso')
@@ -191,11 +196,6 @@ const EquipRuido = document.getElementById('Ruido')
 const EquipTemp = document.getElementById('Temperatura')
 const EquipSpeed = document.getElementById('Velocidade')
 const EquipDiffe = document.getElementById('Diferencial')
-
-const Blur2Sec6 = document.querySelector('.Blur2Sec6')
-const MarksInfo = document.querySelector('.MarksInfo')
-const DivMarks = document.querySelectorAll('.EquipamentMark')
-const Marks = Array.from(DivMarks)
 
 let Cindex = -1
 
@@ -246,12 +246,33 @@ function BackEquip() {
 
 /* Abrindo e fechando marcas*/
 
+const LogoMarkMC = document.querySelector('.LogoMarkMC')
+const MCExample = document.querySelector('.MCExample')
+const TextMark1 = document.querySelector('.Text1')
+const TextMark2 = document.querySelector('.Text2')
+const TextMark3 = document.querySelector('.Text3')
+const TextMark4 = document.querySelector('.Text4')
+const TextMark5 = document.querySelector('.Text5')
+const Icon1 = document.querySelector('.Icon1')
+const Icon2 = document.querySelector('.Icon2')
+const Icon3 = document.querySelector('.Icon3')
+
 Marks.forEach((mark, index) => {
     mark.addEventListener('click', async function () {
         if (index === 0) {
             console.log('kyklon')
             Blur2Sec6.style.opacity = '2'
             Blur2Sec6.style.display = 'flex'
+            LogoMarkMC.src = './images/Marcas/Kyklon/LogoKyklon_1.png'
+            MCExample.src = './images/ExampleImages/MarkExample.png'
+            TextMark1.innerHTML = 'A Kyklon é uma marca reconhecida no mercado pet por oferecer sopradores de alta potência e durabilidade. Seus produtos são conhecidos pela robustez, garantindo um fluxo de ar consistente e eficiente'
+            TextMark2.innerHTML = 'Estrutura em materiais resistentes como alumínio, garantindo durabilidade'
+            TextMark3.innerHTML = 'Alta potência e durabilidade'
+            TextMark4.innerHTML = 'Modelos com ajuste de velocidade'
+            TextMark5.innerHTML = 'Design ergonômico'
+            Icon1.src = './images/Icons/IconPower.png'
+            Icon2.src = './images/Icons/IconSpeed.png'
+            Icon3.src = './images/Icons/iconDesign.png'
 
             await new Promise(resolve => setTimeout(resolve, 100))
             MarksInfo.style.bottom = '0'
@@ -260,6 +281,16 @@ Marks.forEach((mark, index) => {
             console.log('minag')
             Blur2Sec6.style.opacity = '2'
             Blur2Sec6.style.display = 'flex'
+            LogoMarkMC.src = './images/Marcas/Minag/LogoMinag_1.png'
+            MCExample.src = './images/ExampleImages/MarkExample2.png'
+            TextMark1.innerHTML = 'Minag é uma marca que se destaca por produzir sopradores compactos e fáceis de manusear. Seus produtos são ideais para profissionais que precisam de eficiência em um equipamento leve e portátil'
+            TextMark2.innerHTML = 'Produzidos com plásticos de alta resistência e motores com eficiência energética'
+            TextMark3.innerHTML = 'Compactos e portáteis'
+            TextMark4.innerHTML = 'Bom custo-benefício'
+            TextMark5.innerHTML = 'Modelos com baixo nível de ruído'
+            Icon1.src = './images/Icons/IconCompact.png'
+            Icon2.src = './images/Icons/IconBenefic.png'
+            Icon3.src = './images/Icons/iconNoRuid.png'
 
             await new Promise(resolve => setTimeout(resolve, 100))
             MarksInfo.style.bottom = '0'
@@ -268,6 +299,16 @@ Marks.forEach((mark, index) => {
             console.log('plenitude')
             Blur2Sec6.style.opacity = '2'
             Blur2Sec6.style.display = 'flex'
+            LogoMarkMC.src = './images/Marcas/Plenitude/LogoPlenitude_1.png'
+            MCExample.src = './images/ExampleImages/MarkExample3.png'
+            TextMark1.innerHTML = ' A Plenitude foca em inovação e qualidade, oferecendo sopradores que combinam potência e tecnologia avançada. Os produtos da marca são populares por sua durabilidade e design moderno'
+            TextMark2.innerHTML = 'Produzidos com plásticos de alta resistência e motores com eficiência energética'
+            TextMark3.innerHTML = 'Tecnologia avançada'
+            TextMark4.innerHTML = 'Alta durabilidade'
+            TextMark5.innerHTML = 'Design moderno e funcional'
+            Icon1.src = './images/Icons/iconTecnology.png'
+            Icon2.src = './images/Icons/iconDurability.png'
+            Icon3.src = './images/Icons/iconDesign.png'
 
             await new Promise(resolve => setTimeout(resolve, 100))
             MarksInfo.style.bottom = '0'
@@ -276,6 +317,15 @@ Marks.forEach((mark, index) => {
             console.log('graçapet')
             Blur2Sec6.style.opacity = '2'
             Blur2Sec6.style.display = 'flex'
+            LogoMarkMC.src = './images/Marcas/GraçaPet/LogoGraçaPet.png'
+            MCExample.src = './images/ExampleImages/MarkExample4.png'
+            TextMark1.innerHTML = 'Graçapet é uma marca que busca oferecer sopradores que equilibram potência e eficiência energética. Seus produtos são conhecidos por serem eco-friendly e econômicos'
+            TextMark3.innerHTML = 'Eficiência energética'
+            TextMark4.innerHTML = 'Modelos com diversas opções de velocidade'
+            TextMark5.innerHTML = 'Eco friendly(amigável ao meio ambiente)'
+            Icon1.src = './images/Icons/IconPower.png'
+            Icon2.src = './images/Icons/IconEcofamily.png'
+            Icon3.src = './images/Icons/IconSpeed.png'
 
             await new Promise(resolve => setTimeout(resolve, 100))
             MarksInfo.style.bottom = '0'
@@ -284,6 +334,16 @@ Marks.forEach((mark, index) => {
             console.log('hardwind')
             Blur2Sec6.style.opacity = '2'
             Blur2Sec6.style.display = 'flex'
+            LogoMarkMC.src = './images/Marcas/HardWind/LogoHardWind_1.png'
+            MCExample.src = './images/ExampleImages/MarkExample5.png'
+            TextMark1.innerHTML = 'A HardWind é uma marca que se destaca pelo desenvolvimento de sopradores extremamente potentes e adequados para grandes volumes de trabalho, sendo uma escolha comum entre groomers profissionais'
+            TextMark2.innerHTML = 'Construção em aço inoxidável, garantindo resistência ao desgaste'
+            TextMark3.innerHTML = 'Potência extrema'
+            TextMark4.innerHTML = 'Projetado para uso profissional'
+            TextMark5.innerHTML = 'Alta resistência ao uso contínuo'
+            Icon1.src = './images/Icons/IconPower.png'
+            Icon2.src = './images/Icons/IconProfissional.png'
+            Icon3.src = './images/Icons/IconResistence.png'
 
             await new Promise(resolve => setTimeout(resolve, 100))
             MarksInfo.style.bottom = '0'
@@ -292,6 +352,16 @@ Marks.forEach((mark, index) => {
             console.log('atacama')
             Blur2Sec6.style.opacity = '2'
             Blur2Sec6.style.display = 'flex'
+            LogoMarkMC.src = './images/Marcas/Atacama/LogoAtacama.png'
+            MCExample.src = './images/ExampleImages/MarkExample6.png'
+            TextMark1.innerHTML = 'A Atacama oferece sopradores que se destacam pela resistência e desempenho em ambientes exigentes. A marca é reconhecida pela confiabilidade de seus equipamentos em operações prolongadas'
+            TextMark2.innerHTML = 'Equipamentos construídos com componentes reforçados para durabilidade prolongada'
+            TextMark3.innerHTML = 'Alta resistência'
+            TextMark4.innerHTML = 'Desempenho consistente'
+            TextMark5.innerHTML = 'Ideal para condições exigentes'
+            Icon1.src = './images/Icons/IconResistence.png'
+            Icon2.src = './images/Icons/IconPerformance.png'
+            Icon3.src = './images/Icons/IconExigents.png'
 
             await new Promise(resolve => setTimeout(resolve, 100))
             MarksInfo.style.bottom = '0'
@@ -442,6 +512,7 @@ function CloseFilter() {
 
 /* Abrir&Fechar Maquinas do filtro e Equipamentos*/
 async function OpenFilterSelect() {
+    ShowEquip()
     BlurSec7.style.display = 'flex'
     BlurSec7.style.opacity = '2'
 
@@ -590,4 +661,58 @@ async function ConfirmFilter() {
 
     console.log(newli); // Verifica os itens filtrados no console
     ShowFilteredProducts(newli); // Exibe os itens filtrados
+}
+
+const FilterPrice2 = document.querySelector('.FilterPrice2')
+const FPotencia = document.querySelector('.FPotencia')
+const FPeso = document.querySelector('.FPeso')
+const FRuido = document.querySelector('.FRuido')
+const FTemp = document.querySelector('.FTemp')
+const FSpeed = document.querySelector('.FSpeed')
+const FDiffe = document.querySelector('.FDiffe')
+
+let Cindex2 = -1
+
+function ShowEquipFilter() {
+    Cindex2++
+    console.log(Equipements[Cindex])
+
+    FilterPrice2.innerHTML = Equipements[Cindex2].Preço
+    FPotencia.innerHTML = `<b class="Btext">Potência:</b> ${Equipements[Cindex2].Potencia.toFixed(3)} watts`
+    FPeso.innerHTML = `<b class="Btext">Peso:</b> ${Equipements[Cindex2].Peso.toFixed(1)} kg`
+    FRuido.innerHTML = `<b class="Btext">Nivel de Ruido:</b> ${Equipements[Cindex2].Ruido} watts`
+    FTemp.innerHTML = `<b class="Btext">Ajuste de Temperatura:</b> ${Equipements[Cindex2].AjusteTemp}`
+    FSpeed.innerHTML = `<b class="Btext">Ajuste de Velocidade:</b> ${Equipements[Cindex2].AjusteSpeed}`
+    FDiffe.innerHTML = `<b class="Btext">Diferenciais:</b> ${Equipements[Cindex2].Diferencial}`
+}
+
+function NextEquipFilter() {
+    if (Cindex2 < Equipements.length - 1) {
+        Cindex2++
+
+        FilterPrice2.innerHTML = Equipements[Cindex2].Preço
+        FPotencia.innerHTML = `<b class="Btext">Potência:</b> ${Equipements[Cindex2].Potencia.toFixed(3)} watts`
+        FPeso.innerHTML = `<b class="Btext">Peso:</b> ${Equipements[Cindex2].Peso.toFixed(1)} kg`
+        FRuido.innerHTML = `<b class="Btext">Nivel de Ruido:</b> ${Equipements[Cindex2].Ruido} watts`
+        FTemp.innerHTML = `<b class="Btext">Ajuste de Temperatura:</b> ${Equipements[Cindex2].AjusteTemp}`
+        FSpeed.innerHTML = `<b class="Btext">Ajuste de Velocidade:</b> ${Equipements[Cindex2].AjusteSpeed}`
+        FDiffe.innerHTML = `<b class="Btext">Diferenciais:</b> ${Equipements[Cindex2].Diferencial}`
+
+    }
+}
+
+function BackEquipFilter() {
+    if (Cindex2 > 0) {
+        Cindex2--
+
+        FilterPrice2.innerHTML = Equipements[Cindex2].Preço
+        FPotencia.innerHTML = `<b class="Btext">Potência:</b> ${Equipements[Cindex2].Potencia.toFixed(3)} watts`
+        FPeso.innerHTML = `<b class="Btext">Peso:</b> ${Equipements[Cindex2].Peso.toFixed(1)} kg`
+        FRuido.innerHTML = `<b class="Btext">Nivel de Ruido:</b> ${Equipements[Cindex2].Ruido} watts`
+        FTemp.innerHTML = `<b class="Btext">Ajuste de Temperatura:</b> ${Equipements[Cindex2].AjusteTemp}`
+        FSpeed.innerHTML = `<b class="Btext">Ajuste de Velocidade:</b> ${Equipements[Cindex2].AjusteSpeed}`
+        FDiffe.innerHTML = `<b class="Btext">Diferenciais:</b> ${Equipements[Cindex2].Diferencial}`
+
+
+    }
 }

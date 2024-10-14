@@ -25,7 +25,7 @@
 
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
 
-    <link rel="icon" href="./images/logoImage.png" type="image/png">
+    <link rel="icon" href="./images/logocm.png" type="image/png">
 
     <title>Cutelaria Modelo</title>
 </head>
@@ -58,7 +58,7 @@
                 </ul>
             </nav>
 
-            <div class="MenuHeader">
+            <div class="MenuHeader" onclick="move()">
                 <i class='bx bx-menu MenuIcon'></i>
             </div>
         </header>
@@ -146,7 +146,7 @@
                         <img class="LogoMarkMC" src="./images/Marcas/Kyklon/LogoKyklon.png"
                             alt="Logo-Example-Machines-png" loading="lazy">
 
-                        <p class="TextInfoMC1">A Kyklon é uma marca reconhecida no mercado pet por oferecer sopradores
+                        <p class="Text1 TextInfoMC1">A Kyklon é uma marca reconhecida no mercado pet por oferecer sopradores
                             de alta potência e durabilidade. Seus produtos são conhecidos pela robustez, garantindo um
                             fluxo de ar consistente e eficiente</p>
                     </div>
@@ -155,7 +155,7 @@
                         <div class="textStructure">
                             <img class="IconInfo" src="./images/Icons/iconStructure.png" alt="" loading="lazy">
 
-                            <p class="TextInfoMC2">Estrutura em materiais resistentes como alumínio, garantindo durabilidade</p>
+                            <p class="Text2 TextInfoMC2">Estrutura em materiais resistentes como alumínio, garantindo durabilidade</p>
                         </div>
 
                         <img class="MCExample" src="./images/ExampleImages/MarkExample.png" alt="" loading="lazy">
@@ -163,21 +163,21 @@
 
                     <div class="InforPart3">
                         <div class="DivIconsInfo3">
-                            <img class="IconInfoMC" src="./images/Icons/IconPower.png" alt="" loading="lazy">
+                            <img class="Icon1 IconInfoMC" src="./images/Icons/IconPower.png" alt="" loading="lazy">
 
-                            <p class="TextInfoMC2">Alta potência e durabilidade</p>
+                            <p class="Text3 TextInfoMC2">Alta potência e durabilidade</p>
                         </div>
 
                         <div class="DivIconsInfo3">
-                            <img class="IconInfoMC" src="./images/Icons/IconSpeed.png" alt="" loading="lazy">
+                            <img class="Icon2 IconInfoMC" src="./images/Icons/IconSpeed.png" alt="" loading="lazy">
 
-                            <p class="TextInfoMC2">Modelos com ajuste de velocidade</p>
+                            <p class="Text4 TextInfoMC2">Modelos com ajuste de velocidade</p>
                         </div>
 
                         <div class="DivIconsInfo3">
-                            <img class="IconInfoMC" src="./images/Icons/iconDesign.png" alt="" loading="lazy">
+                            <img class="Icon3 IconInfoMC" src="./images/Icons/iconDesign.png" alt="" loading="lazy">
 
-                            <p class="TextInfoMC2">Design ergonômico</p>
+                            <p class="Text5 TextInfoMC2">Design ergonômico</p>
                         </div>
 
                     </div>
@@ -453,10 +453,10 @@
                 <div class="MachinesFilter">
                     <div class="FilterDiv1">
                         <div class="FilterArrow">
-                            <button class="ButtonArrow">
+                            <button class="ButtonArrow" onclick="BackEquipFilter()">
                                 <i class='bx bx-chevron-left IconArrow'></i>
                             </button>
-                            <button class="ButtonArrow">
+                            <button class="ButtonArrow" onclick="NextEquipFilter()">
                                 <i class='bx bx-chevron-right IconArrow'></i>
                             </button>
                         </div>
@@ -482,27 +482,27 @@
                                 <img class="IconInformation" src="./images/Icons/IconPower.png"
                                     alt="Icon-Especific-png">
 
-                                <p class="FilterInformation"><b class="Btext">Potência:</b> 2.800 watts</p>
+                                <p class="FPotencia FilterInformation"><b class="Btext">Potência:</b> 2.800 watts</p>
                             </div>
 
                             <div class="TextInformation">
                                 <img class="IconInformation" src="./images/Icons/IconWeight.png"
                                     alt="Icon-Especific-png">
 
-                                <p class="FilterInformation"><b class="Btext">Peso:</b> 4.5 kg</p>
+                                <p class="FPeso FilterInformation"><b class="Btext">Peso:</b> 4.5 kg</p>
                             </div>
 
                             <div class="TextInformation">
                                 <img class="IconInformation" src="./images/Icons/IconSound.png"
                                     alt="Icon-Especific-png">
 
-                                <p class="FilterInformation"><b class="Btext">Nivel de ruido:</b> 2.800 watts</p>
+                                <p class="FRuido FilterInformation"><b class="Btext">Nivel de ruido:</b> 2.800 watts</p>
                             </div>
 
                             <div class="TextInformation">
                                 <img class="IconInformation" src="./images/Icons/IconTemp.png" alt="Icon-Especific-png">
 
-                                <p class="FilterInformation"><b class="Btext">Ajuste de Temperatura:</b> Sim (2 níveis)
+                                <p class="FTemp FilterInformation"><b class="Btext">Ajuste de Temperatura:</b> Sim (2 níveis)
                                 </p>
                             </div>
 
@@ -510,12 +510,12 @@
                                 <img class="IconInformation" src="./images/Icons/IconSpeed.png"
                                     alt="Icon-Especific-png">
 
-                                <p class="FilterInformation"><b class="Btext">Ajuste de Velocidade:</b> Sim (2
+                                <p class="FSpeed FilterInformation"><b class="Btext">Ajuste de Velocidade:</b> Sim (2
                                     velocidades)s</p>
                             </div>
                         </div>
 
-                        <p class="FilterDifferent"><b class="Btext">Diferenciais:</b> Alta durabilidade e eficiência
+                        <p class="FDiffe FilterDifferent"><b class="Btext">Diferenciais:</b> Alta durabilidade e eficiência
                             energética; Design
                             ergonômico para uso prolongado; Reconhecido pela robustez</p>
                     </div>

@@ -9,6 +9,7 @@ const ListMachines = document.querySelector('.ListTosaMachines')
 const MCSelected = document.querySelector('.MCSelected')
 const BackArrow = document.querySelector('.BackArrow')
 
+
 const ProductsMachine = [
     {
         Tipo: 'Profissional',
