@@ -618,6 +618,9 @@ Select4.addEventListener('change', function () {
     Material = Select4.value
 })
 
+
+let newli = Equipements
+
 async function ConfirmFilter() {
     BoxFilter.style.opacity = "0";
 
@@ -625,7 +628,7 @@ async function ConfirmFilter() {
     BoxFilter.style.right = "-500px";
 
     // Aplicando todos os filtros de forma cumulativa
-    let newli = Equipements.filter(item => {
+    newli = Equipements.filter(item => {
         let isValid = true;
 
         // Filtro de Ruído
@@ -675,19 +678,19 @@ let Cindex2 = -1
 
 function ShowEquipFilter() {
     Cindex2++
-    console.log(Equipements[Cindex])
+    console.log(newli[Cindex])
 
-    FilterPrice2.innerHTML = Equipements[Cindex2].Preço
-    FPotencia.innerHTML = `<b class="Btext">Potência:</b> ${Equipements[Cindex2].Potencia.toFixed(3)} watts`
-    FPeso.innerHTML = `<b class="Btext">Peso:</b> ${Equipements[Cindex2].Peso.toFixed(1)} kg`
-    FRuido.innerHTML = `<b class="Btext">Nivel de Ruido:</b> ${Equipements[Cindex2].Ruido} watts`
-    FTemp.innerHTML = `<b class="Btext">Ajuste de Temperatura:</b> ${Equipements[Cindex2].AjusteTemp}`
-    FSpeed.innerHTML = `<b class="Btext">Ajuste de Velocidade:</b> ${Equipements[Cindex2].AjusteSpeed}`
-    FDiffe.innerHTML = `<b class="Btext">Diferenciais:</b> ${Equipements[Cindex2].Diferencial}`
+    FilterPrice2.innerHTML = newli[Cindex2].Preço
+    FPotencia.innerHTML = `<b class="Btext">Potência:</b> ${newli[Cindex2].Potencia.toFixed(3)} watts`
+    FPeso.innerHTML = `<b class="Btext">Peso:</b> ${newli[Cindex2].Peso.toFixed(1)} kg`
+    FRuido.innerHTML = `<b class="Btext">Nivel de Ruido:</b> ${newli[Cindex2].Ruido} watts`
+    FTemp.innerHTML = `<b class="Btext">Ajuste de Temperatura:</b> ${newli[Cindex2].AjusteTemp}`
+    FSpeed.innerHTML = `<b class="Btext">Ajuste de Velocidade:</b> ${newli[Cindex2].AjusteSpeed}`
+    FDiffe.innerHTML = `<b class="Btext">Diferenciais:</b> ${newli[Cindex2].Diferencial}`
 }
 
 function NextEquipFilter() {
-    if (Cindex2 < Equipements.length - 1) {
+    if (Cindex2 < newli.length - 1) {
         Cindex2++
 
         FilterPrice2.innerHTML = Equipements[Cindex2].Preço
